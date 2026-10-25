@@ -1,0 +1,33 @@
+name: Skill 使用反馈
+description: 提交一次可复现的实际使用问题，帮助改进流程。
+title: "[反馈] "
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill 与客户端
+      description: 技能名称、仓库版本或提交、客户端与模型（已知时）。
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: 输入与复现步骤
+      description: 提供匿名化请求和最小材料，注明是否联网；不要贴账号、令牌或私人交易明细。
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际输出
+      description: 保留出现问题的原始段落及材料来源。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为与依据
+      description: 说明希望如何处理，或提供能推翻输出的事实。
+    validations:
+      required: true
+

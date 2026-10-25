@@ -1,0 +1,26 @@
+name: 来源修正或新框架
+description: 补原始出处、修正归因或提议有明确用途的新技能。
+title: "[来源] "
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 要解决的研究问题
+      description: 描述一项具体任务，以及现有技能为何不足。
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 原始材料
+      description: 直接链接、作者、日期和段落定位；访问受限或来源不确定时如实说明。
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 观点、操作化与边界
+      description: 哪些是原文观点，哪些是你设计的步骤？哪些证据会使其失效？
+    validations:
+      required: true
+

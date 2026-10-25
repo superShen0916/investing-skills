@@ -5,8 +5,14 @@
 <h1 align="center">Investing Skills · 投资方法论技能库</h1>
 
 <p align="center"><strong>从巴菲特到炒股养家，把公开投资思想变成 AI 能执行的研究流程。</strong></p>
-<p align="center">8 个 Skills · 7 套人物框架 · 原始出处 · 反证清单 · 中文 A 股经验</p>
+<p align="center">12 个 Skills · 11 套人物框架 · 4 种任务工作流 · 原始出处 · 中文 A 股经验</p>
 <p align="center"><a href="README.en.md">English</a> · <a href="#快速开始">快速开始</a> · <a href="#技能目录">技能目录</a> · <a href="examples/README.md">看示例</a> · <a href="CONTRIBUTING.md">参与共建</a></p>
+
+<p align="center">
+  <a href="https://github.com/superShen0916/investing-skills/actions/workflows/validate.yml"><img src="https://github.com/superShen0916/investing-skills/actions/workflows/validate.yml/badge.svg" alt="Validate skills"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-167D5B" alt="MIT License"></a>
+  <a href="https://agentskills.io/specification"><img src="https://img.shields.io/badge/format-Agent%20Skills-315C83" alt="Agent Skills format"></a>
+</p>
 
 问 AI“这只股票怎么样”，容易得到一份面面俱到、难以核查的回答。
 
@@ -20,6 +26,22 @@
 
 本库把分散在股东信、机构文章和本人原帖里的公开观点，整理成
 **输入 → 取证 → 判断 → 反证 → 输出**的 Agent Skills。每个技能附来源、适用条件和失效情形。
+
+```bash
+npx skills add superShen0916/investing-skills
+```
+
+## 你想完成什么任务？
+
+| 从这里开始 | 适合的材料 | 可选框架 | 拿到什么 |
+| --- | --- | --- | --- |
+| [研究一家公司](docs/PLAYBOOKS.md#1-企业研究) | 财报、产品观察、当前论点 | 林奇 → 巴菲特 → 格雷厄姆 → 芒格 | 经营假设、现金与价格、最强反方 |
+| [复盘一次交易](docs/PLAYBOOKS.md#2-a-股交易复盘) | 事前计划、候选、成交与费用 | 养家 → 北京炒家 → 退学炒股 | 环境假设、交易事件链、执行偏离 |
+| [审查一个组合](docs/PLAYBOOKS.md#3-组合审查) | 匿名持仓、权重、币种、期限 | 博格 → 达利欧 → 马克斯 | 成本账、共同暴露与损失路径 |
+| [拆解一个热门叙事](docs/PLAYBOOKS.md#4-市场叙事) | 消息、价格、融资或经营证据 | 索罗斯 → 马克斯 → 养家 | 反馈链、竞争解释与断点 |
+
+按问题加载必要步骤，不要求每次运行整个组合。每条工作流都提供安装命令与可复制提示。
+第一次用，可以直接填 [研究输入模板](templates/research-brief.md)；不知道选谁时用 `investment-committee`。
 
 ## 先看它能产出什么
 
@@ -40,6 +62,8 @@
 另保留了一次[独立代理的离线实际执行记录](docs/evaluations/2026-10-26-committee.md)：
 在材料不足且要求“80% 赚钱”的任务中，输出了可核查计算、双期限比较和证据缺口。
 这是一次行为观察，尚不能证明多轮稳定性或投资能力。
+
+还提供 [6 道可复现的行为评估题](evals/README.md)，用于检查价值陷阱、因果误判、历史信息泄漏等问题；新增题目尚未批量执行，不计为通过率。
 
 ## 快速开始
 
@@ -74,7 +98,7 @@ npx skills add superShen0916/investing-skills --list
 确认最终路径为 `.agents/skills/buffett-business-quality/SKILL.md`。
 
 格式与目录依据：[Agent Skills](https://agentskills.io/specification)、[OpenAI Docs](https://learn.chatgpt.com/docs/build-skills)、
-[Claude Code 文档](https://code.claude.com/docs/en/skills)。当前版本完成格式与本地引用校验；客户端安装兼容性尚未逐项实测。
+[Claude Code 文档](https://code.claude.com/docs/en/skills)。已在隔离目录验证 Codex、Claude Code 的 CLI 项目安装；各客户端的完整运行行为尚未逐项实测。
 
 ### 调用
 
@@ -102,6 +126,10 @@ Claude Code 使用 `/buffett-business-quality` 等技能名称。研究委员会
 | [tuixue-trading-journal](skills/tuixue-trading-journal/SKILL.md) | 退学炒股本人原帖 | 踏空、膨胀、回本冲动与计划偏离 | 交易时间线与纠错实验 |
 | [beijing-first-board-review](skills/beijing-first-board-review/SKILL.md) | 北京炒家公开专访、本人帖子 | 首板候选、真实成交、隔日退出 | 事件链与策略缺口审查 |
 | [yangjia-market-regime](skills/yangjia-market-regime/SKILL.md) | 炒股养家本人文章 | 市场阶段、参与者心理与应变 | 竞争假设与失效条件 |
+| [munger-inversion](skills/munger-inversion/SKILL.md) | 芒格公开演讲与出版方文本 | 反向思考、激励、前提盲点 | 失败路径与反方证据 |
+| [graham-margin-of-safety](skills/graham-margin-of-safety/SKILL.md) | 格雷厄姆访谈及有明确归属的转述 | 价格余地、资产质量、价值陷阱 | 价值桥与敏感性检查 |
+| [lynch-business-evidence](skills/lynch-business-evidence/SKILL.md) | 彼得·林奇公开采访 | 从产品观察到经营证据 | 可证伪的增长假设表 |
+| [soros-reflexivity](skills/soros-reflexivity/SKILL.md) | 索罗斯原机构讲稿 | 看法、行为与基本面的反馈 | 反馈链与断点研究 |
 
 人物姓名帮助识别思想来源。所有技能均由维护者独立编写，不代表本人授权、背书或完整策略。
 
@@ -125,7 +153,11 @@ skills/                 可单独安装的技能
   <name>/references/    来源与归因
 examples/               标注为虚构的离线演示
 catalog.json            机器可读目录
+skills-index.json       从真实技能元数据生成的发现索引
+docs/PLAYBOOKS.md        四种任务工作流与安装组合
+templates/              可直接填的研究输入
 scripts/validate.py     格式、目录、来源记录与本地链接检查
+scripts/build_index.py  生成索引，--check 检查目录漂移
 ```
 
 技能内容本身没有代码运行时依赖。维护者检查需要 Python 3.10+：
@@ -134,6 +166,8 @@ scripts/validate.py     格式、目录、来源记录与本地链接检查
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-dev.txt
 .venv/bin/python scripts/validate.py
+.venv/bin/python scripts/build_index.py --check
+.venv/bin/python -m unittest discover -s tests -v
 ```
 
 检查不会联网，不验证外部链接实时可用性、客户端兼容性或投资收益。
@@ -141,7 +175,7 @@ python3 -m venv .venv
 ## 一起补齐投资思想的“最后一公里”
 
 欢迎贡献：原始出处、反例、实际使用失败记录、英文版，以及新框架。
-下一批可研究方向包括 Graham、Munger、Lynch、Livermore；在完成前不计入现有技能。
+下一批可研究方向包括 Livermore 等趋势与风险框架；在完成前不计入现有技能。
 
 从 [贡献指南](CONTRIBUTING.md) 开始。分享时可以直接链接某个技能或演示，
 也可以用同一份公开材料比较不同框架，提交你发现的分歧。
@@ -150,6 +184,10 @@ python3 -m venv .venv
 [Buffett Skills](https://github.com/agi-now/buffett-skills)、
 [Claude Trading Skills](https://github.com/tradermonty/claude-trading-skills)。
 本库聚焦公开观点的来源、中文 A 股经验和可复查的研究流程。
+
+本轮还对照了 Superpowers、Anthropic Skills、Vercel Agent Skills 等五个热门项目，
+将任务入口、工作流衔接、发现索引与贡献反馈落实到库中。
+见 [调研快照与具体取舍](docs/PROJECT_STUDY.md)、[更新记录](CHANGELOG.md)。
 
 ## 使用范围与许可
 

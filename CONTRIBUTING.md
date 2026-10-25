@@ -28,17 +28,26 @@
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-dev.txt
 .venv/bin/python scripts/validate.py
+.venv/bin/python scripts/build_index.py
+.venv/bin/python scripts/build_index.py --check
+.venv/bin/python -m unittest discover -s tests -v
 ```
 
+新增或改名时同步 `catalog.json`，再生成 `skills-index.json`；修改描述也需重新生成索引。
 校验不会联网，也不验证策略业绩。PR 说明应写明改动、来源和验证范围。
 若声称改善了实际行为，请提供任务输入和输出，说明模型、日期和浏览条件。
+可从 [行为评估题](evals/README.md) 选相关案例；不能以关键词匹配代替推理质量检查。
 不要把模拟示例写成实测结果，不提交私人账户、身份信息或访问令牌。
 
 ## 可以认领的方向
 
-- Graham：安全边际；Munger：反向思考；Lynch：企业与增长；Livermore：趋势与风险。
+- Livermore 等趋势与风险框架，优先补可靠的一手材料。
 - 更好的失效案例、历史时点复盘、缺资料时的表现评估。
 - 英文版 skill、客户端安装实测、来源链接维护。
 
 路线图表示可贡献方向；在完成来源核查和行为评估前，不视为已支持。
+
+新框架可使用 [来源提案](https://github.com/superShen0916/investing-skills/issues/new?template=source-proposal.yml)，
+遇到实际使用问题可使用 [使用反馈](https://github.com/superShen0916/investing-skills/issues/new?template=skill-feedback.yml)。
+也欢迎直接发 PR；本库不会自动替贡献者向外部项目投稿。
 

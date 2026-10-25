@@ -25,6 +25,10 @@ description: "按投资期限与研究问题选择合适的投资框架，比较
 | 问题 | 主框架 | 适合补充的反方视角 |
 | --- | --- | --- |
 | 一家公司值得长期研究吗 | buffett-business-quality | marks-cycle-risk：好公司是否已被高价反映 |
+| 熟悉的产品能变成投资论点吗 | lynch-business-evidence | munger-inversion：观察偏差与失败路径 |
+| 低估值是否是价值陷阱 | graham-margin-of-safety | buffett-business-quality：资产与经营是否在恶化 |
+| 已有论点最可能错在哪里 | munger-inversion | 回到主框架验证反方，而非只列泛泛风险 |
+| 热门叙事是否影响了基本面 | soros-reflexivity | marks-cycle-risk：价格与损失机制是否匹配 |
 | 组合是否太贵、太复杂 | bogle-cost-discipline | dalio-risk-budgeting：成本低但风险是否集中 |
 | 不同资产是否真的分散 | dalio-risk-budgeting | marks-cycle-risk：压力下相关性是否变化 |
 | 是否受市场热度驱动 | marks-cycle-risk | tuixue-trading-journal：自身冲动与市场证据分开 |

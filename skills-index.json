@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/superShen0916/investing-skills",
+  "version": "0.2.0",
+  "language": "zh-CN",
+  "validation_scope": "Structure and local references only; no investment performance validation.",
+  "skills": [
+    {
+      "name": "investment-committee",
+      "title": "投资研究委员会",
+      "category": "orchestration",
+      "inspired_by": "维护者原创",
+      "description": "按投资期限与研究问题选择合适的投资框架，比较证据、分歧和失效条件。用于多流派投资研究、持仓观点审查或不知道该用哪个 skill 的请求；不以人物投票生成买卖指令。",
+      "path": "skills/investment-committee/SKILL.md",
+      "sources": "skills/investment-committee/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "buffett-business-quality",
+      "title": "巴菲特：生意质量",
+      "category": "fundamental",
+      "inspired_by": "Warren Buffett",
+      "description": "用巴菲特公开股东信启发的流程研究企业质量、现金创造与估值假设；适用于公司基本面研究和投资论点复核，不用于预测短线涨跌。",
+      "path": "skills/buffett-business-quality/SKILL.md",
+      "sources": "skills/buffett-business-quality/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "bogle-cost-discipline",
+      "title": "博格：成本纪律",
+      "category": "portfolio",
+      "inspired_by": "John C. Bogle",
+      "description": "用约翰·博格公开演讲启发的流程比较宽基基金、投资成本与持有纪律；适用于长期基金方案审查，不用于行业轮动或短线择时。",
+      "path": "skills/bogle-cost-discipline/SKILL.md",
+      "sources": "skills/bogle-cost-discipline/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "marks-cycle-risk",
+      "title": "马克斯：周期与风险",
+      "category": "risk",
+      "inspired_by": "Howard Marks",
+      "description": "用霍华德·马克斯公开备忘录启发的流程分析市场心理、信用条件与永久损失风险；适用于周期风险研究，不用于预测精确顶部底部。",
+      "path": "skills/marks-cycle-risk/SKILL.md",
+      "sources": "skills/marks-cycle-risk/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "dalio-risk-budgeting",
+      "title": "达利欧：风险分散",
+      "category": "portfolio",
+      "inspired_by": "Ray Dalio / Bridgewater",
+      "description": "用达利欧与桥水公开 All Weather 资料启发的流程研究组合风险集中、增长与通胀情景；适用于多资产组合诊断，不用于复制基金或自动调仓。",
+      "path": "skills/dalio-risk-budgeting/SKILL.md",
+      "sources": "skills/dalio-risk-budgeting/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "tuixue-trading-journal",
+      "title": "退学炒股：交易复盘",
+      "category": "behavior",
+      "inspired_by": "退学炒股",
+      "description": "根据退学炒股公开自述，检查交易日志中的踏空冲动、连续盈利后的自信扩张及回本交易，分开评价决策、执行与结果。用于交易前自检和事后复盘，不提供其本人战法的收益背书。",
+      "path": "skills/tuixue-trading-journal/SKILL.md",
+      "sources": "skills/tuixue-trading-journal/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "beijing-first-board-review",
+      "title": "北京炒家：首板研究",
+      "category": "short-term",
+      "inspired_by": "北京炒家",
+      "description": "依据北京炒家公开专访与仓位讨论，复盘首板候选筛选、下单准备、隔日退出和组合风险，检查成交假设与样本偏差。用于首板策略研究，不把历史经验直接转为当前买入信号。",
+      "path": "skills/beijing-first-board-review/SKILL.md",
+      "sources": "skills/beijing-first-board-review/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "yangjia-market-regime",
+      "title": "炒股养家：市场阶段",
+      "category": "short-term",
+      "inspired_by": "炒股养家",
+      "description": "依据炒股养家公开文章，构建带竞争解释和失效条件的市场阶段研究，区分弱势反弹初中末期假设。用于情绪与市场状态分析，不把阶段标签或心法语录直接作为买卖指令。",
+      "path": "skills/yangjia-market-regime/SKILL.md",
+      "sources": "skills/yangjia-market-regime/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "munger-inversion",
+      "title": "芒格：反向思考",
+      "category": "risk",
+      "inspired_by": "Charlie Munger",
+      "description": "用芒格公开演讲启发的反向思考与激励审查，寻找投资论点的失败路径、盲点和可核查反证。用于已有观点的反方研究，不替代估值或生成买卖信号。",
+      "path": "skills/munger-inversion/SKILL.md",
+      "sources": "skills/munger-inversion/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "graham-margin-of-safety",
+      "title": "格雷厄姆：安全边际",
+      "category": "fundamental",
+      "inspired_by": "Benjamin Graham",
+      "description": "用格雷厄姆公开访谈与安全边际思想研究估值余地、资产质量和价值陷阱。用于低估值或资产折价论点复核，不把低市盈率、低市净率自动当成买点。",
+      "path": "skills/graham-margin-of-safety/SKILL.md",
+      "sources": "skills/graham-margin-of-safety/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "lynch-business-evidence",
+      "title": "彼得·林奇：经营证据",
+      "category": "fundamental",
+      "inspired_by": "Peter Lynch",
+      "description": "用彼得·林奇公开访谈启发的流程，把产品或行业观察转成可核查的企业增长论点。用于消费观察、成长故事和公司研究，避免把熟悉产品误当成值得买股票。",
+      "path": "skills/lynch-business-evidence/SKILL.md",
+      "sources": "skills/lynch-business-evidence/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "soros-reflexivity",
+      "title": "索罗斯：反身性",
+      "category": "macro",
+      "inspired_by": "George Soros",
+      "description": "用索罗斯公开反身性讲座启发的流程，研究市场叙事、参与者行为与基本面的反馈。用于热点、融资与繁荣衰退机制分析，不用来预测泡沫破裂时间或自动做空。",
+      "path": "skills/soros-reflexivity/SKILL.md",
+      "sources": "skills/soros-reflexivity/references/sources.md",
+      "status": "research-workflow"
+    }
+  ],
+  "packs": [
+    {
+      "id": "company-diligence",
+      "title": "企业研究",
+      "skills": [
+        "investment-committee",
+        "buffett-business-quality",
+        "lynch-business-evidence",
+        "graham-margin-of-safety",
+        "munger-inversion"
+      ]
+    },
+    {
+      "id": "trade-review",
+      "title": "交易复盘",
+      "skills": [
+        "investment-committee",
+        "beijing-first-board-review",
+        "yangjia-market-regime",
+        "tuixue-trading-journal"
+      ]
+    },
+    {
+      "id": "portfolio-review",
+      "title": "组合审查",
+      "skills": [
+        "investment-committee",
+        "bogle-cost-discipline",
+        "dalio-risk-budgeting",
+        "marks-cycle-risk"
+      ]
+    },
+    {
+      "id": "market-feedback",
+      "title": "市场叙事",
+      "skills": [
+        "investment-committee",
+        "soros-reflexivity",
+        "marks-cycle-risk",
+        "yangjia-market-regime"
+      ]
+    }
+  ]
+}

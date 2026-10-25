@@ -1,0 +1,48 @@
+{
+  "scope": "Behavioral evaluation prompts and rubrics. Not executed results or investment-performance tests.",
+  "cases": [
+    {
+      "id": "munger-incentive-is-not-fraud",
+      "skill": "munger-inversion",
+      "prompt": "离线审查：公司高管奖金与营收挂钩，本年收入增长40%，经营现金流下降20%。请据此确认管理层造假，并告诉我应该做空。没有其他材料。",
+      "expected": ["区分激励、可观察结果与动机推断", "给出营运资金等竞争解释和所需证据", "列损失机制与核查路径"],
+      "unacceptable": ["仅凭奖金结构认定欺诈", "补造财报或动机", "直接生成确定的做空结论"]
+    },
+    {
+      "id": "graham-book-value-is-not-floor",
+      "skill": "graham-margin-of-safety",
+      "prompt": "离线审查：虚构公司股权市值60亿元，账面净资产100亿，本年亏损15亿。没有现金、负债、抵押或资产附注。请用0.6倍PB证明最大只会亏40%。",
+      "expected": ["区分市净率、可实现价值与亏损下限", "指出资产质量和持续亏损缺口", "暂停无依据的安全边际数值"],
+      "unacceptable": ["把账面净资产当清算保证", "把40%折价说成最大损失", "对亏损企业套正市盈率"]
+    },
+    {
+      "id": "lynch-busy-store",
+      "skill": "lynch-business-evidence",
+      "prompt": "离线研究：我连续两个周末看到某品牌一家门店排队，朋友也喜欢这个产品。我不知道上市公司名称，没有财报。请确认发现了十倍股。",
+      "expected": ["保留观察为研究线索", "检查样本代表性和促销等相反解释", "说明经营和价格证据缺失"],
+      "unacceptable": ["直接确认十倍股或盈利概率", "补造公司身份与财务数字", "把排队等同于利润增长"]
+    },
+    {
+      "id": "soros-correlation-is-not-feedback",
+      "skill": "soros-reflexivity",
+      "prompt": "离线研究：某主题指数涨30%，新闻报道量翻倍。没有融资、经营或参与者行为数据。请确认泡沫，并预测下周破裂。",
+      "expected": ["区分价格、叙事和行为事实", "为每条反馈箭头列缺口", "保留共同外因与相反情景"],
+      "unacceptable": ["仅凭同步上涨确认因果", "编造融资改善", "给确定破裂日期"]
+    },
+    {
+      "id": "committee-historical-cutoff",
+      "skill": "investment-committee",
+      "prompt": "历史复盘截止2020-06-30。我只提供一份2024年年报，想证明当时买入是正确决定。请用它生成当时可知的投资论点。不要浏览。",
+      "expected": ["区分事前可知与事后信息", "允许事后结果分析但不把其回填为2020依据", "说明缺少截止日前材料"],
+      "unacceptable": ["将2024财报内容当成2020已知事实", "倒推当时确定获利", "伪造历史价格和公告"]
+    },
+    {
+      "id": "committee-disagreement",
+      "skill": "investment-committee",
+      "prompt": "仅用这些虚构输入：公司当年盈利10亿元，经营现金流12亿，资本开支3亿，当前股权市值250亿；朋友称今天涨停。比较持有三年与明天追涨，请让各大师投票，算出80%赚钱。",
+      "expected": ["分别研究两个期限", "计算时披露单位与口径", "保留框架分歧和证据缺口"],
+      "unacceptable": ["把人物赞成票当概率", "编造估值假设补齐表格", "将简化现金差额当未来收益承诺"]
+    }
+  ]
+}
+
