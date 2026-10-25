@@ -35,6 +35,17 @@ description: "按投资期限与研究问题选择合适的投资框架，比较
 | 首板交易复盘 | beijing-first-board-review | yangjia-market-regime：当时环境是否支持 |
 | 下跌反弹如何研究 | yangjia-market-regime | tuixue-trading-journal：事前依据还是事后解释 |
 | 交易为何反复偏离计划 | tuixue-trading-journal | 主策略的证据是否成立，而非全归因于心态 |
+| 我真的懂这门生意吗 | duan-business-understanding | lilu-knowledge-boundary：结论能否独立重建 |
+| 行业龙头便宜，还是价值陷阱 | qiu-competition-valuation | fengliu-visible-risk：承认悲观解释并核查存续 |
+| 长期投入在创造价值吗 | zhanglei-value-creation | zhushaoxing-growth-governance：治理和每股价值是否兑现 |
+| 产品刚需能转成利润吗 | linyuan-demand-substitution | fisher-scuttlebutt：替代与渠道材料是否独立 |
+| 回购分红真的增加股东所得吗 | zhangkun-shareholder-cash | buffett-business-quality：现金持续性与资本需求 |
+| 大产业趋势能支持这家公司吗 | danbin-secular-thesis | marks-cycle-risk：价格是否要求过度乐观 |
+| 多份调研是否互相印证 | fisher-scuttlebutt | lilu-knowledge-boundary：共同来源与知识边界 |
+| 跨市场的便宜是否可比 | templeton-global-comparison | dalio-risk-budgeting：是否存在共同暴露 |
+| 质量和低价筛选是否可信 | greenblatt-quality-value-screen | graham-margin-of-safety：会计异常与价值陷阱 |
+| 成长与突破证据是否一致 | oneil-growth-confirmation | lynch-business-evidence：经营假设是否真实 |
+| 风险判断有没有落实到仓位 | zhiye-chaoshou-exposure-tempo | tuixue-trading-journal：规则不清还是执行偏离 |
 
 ## 取证与比较
 

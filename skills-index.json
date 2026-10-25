@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "https://github.com/superShen0916/investing-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "language": "zh-CN",
   "validation_scope": "Structure and local references only; no investment performance validation.",
   "skills": [
@@ -124,6 +124,146 @@
       "path": "skills/soros-reflexivity/SKILL.md",
       "sources": "skills/soros-reflexivity/references/sources.md",
       "status": "research-workflow"
+    },
+    {
+      "name": "duan-business-understanding",
+      "title": "段永平：生意理解",
+      "category": "fundamental",
+      "inspired_by": "段永平",
+      "description": "用段永平公开交流启发的流程检查是否真正理解一家公司的生意与企业文化。用于能力圈自查、长期持有理由审查，以及区分懂产品、懂公司和跟随名人持仓。",
+      "path": "skills/duan-business-understanding/SKILL.md",
+      "sources": "skills/duan-business-understanding/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "lilu-knowledge-boundary",
+      "title": "李录：知识边界",
+      "category": "fundamental",
+      "inspired_by": "李录",
+      "description": "用李录公开演讲启发的流程审查投资知识边界和独立判断。用于研究论点的知识审计、事实与猜测分离，以及市场反对自己时的证据复查。",
+      "path": "skills/lilu-knowledge-boundary/SKILL.md",
+      "sources": "skills/lilu-knowledge-boundary/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "zhanglei-value-creation",
+      "title": "张磊：价值创造",
+      "category": "fundamental",
+      "inspired_by": "张磊",
+      "description": "用张磊公开书摘启发的流程检验长期主义是否落实为价值创造。用于研发、组织转型、长期投入与短期利润取舍的企业研究，区分长期投资和无期限等待。",
+      "path": "skills/zhanglei-value-creation/SKILL.md",
+      "sources": "skills/zhanglei-value-creation/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "qiu-competition-valuation",
+      "title": "邱国鹭：格局与估值",
+      "category": "fundamental",
+      "inspired_by": "邱国鹭",
+      "description": "用邱国鹭公开专访启发的流程交叉检查行业竞争格局、公司品质与估值。用于低估值龙头、行业集中度提升和价值陷阱研究，避免以便宜替代经营质量。",
+      "path": "skills/qiu-competition-valuation/SKILL.md",
+      "sources": "skills/qiu-competition-valuation/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "fengliu-visible-risk",
+      "title": "冯柳：风险呈现",
+      "category": "risk",
+      "inspired_by": "冯柳",
+      "description": "用冯柳公开弱者体系访谈启发的流程研究已暴露风险、市场共识与等待的代价。用于大跌后逆向论点审查，区分风险可见、风险已定价与风险已解除。",
+      "path": "skills/fengliu-visible-risk/SKILL.md",
+      "sources": "skills/fengliu-visible-risk/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "linyuan-demand-substitution",
+      "title": "林园：需求与替代",
+      "category": "fundamental",
+      "inspired_by": "林园",
+      "description": "用林园公开专访启发的流程检查持续需求、产品替代性与财务承受力。用于消费和医药等需求故事研究，避免把行业需求增长或品牌知名度当成公司利润保证。",
+      "path": "skills/linyuan-demand-substitution/SKILL.md",
+      "sources": "skills/linyuan-demand-substitution/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "danbin-secular-thesis",
+      "title": "但斌：产业趋势",
+      "category": "fundamental",
+      "inspired_by": "但斌",
+      "description": "用但斌公开专访启发的流程审查大产业趋势与龙头公司的长期论点。用于技术浪潮、长期持有和集中暴露研究，区分趋势正确、公司受益与买入价格合理。",
+      "path": "skills/danbin-secular-thesis/SKILL.md",
+      "sources": "skills/danbin-secular-thesis/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "zhangkun-shareholder-cash",
+      "title": "张坤：股东现金",
+      "category": "fundamental",
+      "inspired_by": "张坤 / 易方达公开报告",
+      "description": "用张坤管理基金的公开报告启发的流程核查自由现金流、分红回购与股东所得。用于高质量高股息论点、回购价值及经营现金与估值背离的研究。",
+      "path": "skills/zhangkun-shareholder-cash/SKILL.md",
+      "sources": "skills/zhangkun-shareholder-cash/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "zhushaoxing-growth-governance",
+      "title": "朱少醒：成长与治理",
+      "category": "fundamental",
+      "inspired_by": "朱少醒 / 富国公开报告",
+      "description": "用朱少醒管理基金的公开报告启发的流程检查成长质量、公司治理与合理定价。用于自下而上选股研究，把企业基因等抽象表述转成可观察的管理和经营证据。",
+      "path": "skills/zhushaoxing-growth-governance/SKILL.md",
+      "sources": "skills/zhushaoxing-growth-governance/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "zhiye-chaoshou-exposure-tempo",
+      "title": "职业炒手：仓位与节奏",
+      "category": "short-term",
+      "inspired_by": "职业炒手",
+      "description": "用职业炒手本人老帖启发的流程复盘仓位、交易节奏与回撤。用于已有成交记录的执行审查，比较事前风险判断和实际资金暴露，不生成网传游资战法或收益神话。",
+      "path": "skills/zhiye-chaoshou-exposure-tempo/SKILL.md",
+      "sources": "skills/zhiye-chaoshou-exposure-tempo/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "fisher-scuttlebutt",
+      "title": "菲利普·费雪：多方调查",
+      "category": "fundamental",
+      "inspired_by": "Philip A. Fisher",
+      "description": "用菲利普·费雪的多方调查思想及有明确归属的公开转述启发的流程，设计企业研究的交叉核实。用于渠道调查计划、客户与竞争者证据整理及增长论点反证。",
+      "path": "skills/fisher-scuttlebutt/SKILL.md",
+      "sources": "skills/fisher-scuttlebutt/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "templeton-global-comparison",
+      "title": "邓普顿：全球比较",
+      "category": "portfolio",
+      "inspired_by": "John Templeton",
+      "description": "用约翰·邓普顿署名文章启发的流程比较不同市场的价值与逆向论点。用于跨市场低估研究、悲观情绪审查及税费汇率后的实际回报比较。",
+      "path": "skills/templeton-global-comparison/SKILL.md",
+      "sources": "skills/templeton-global-comparison/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "greenblatt-quality-value-screen",
+      "title": "格林布拉特：质量与价格",
+      "category": "systematic",
+      "inspired_by": "Joel Greenblatt",
+      "description": "用乔尔·格林布拉特公开公式投资资料启发的流程检查质量与便宜的联合筛选。用于选股因子研究、候选排序和回测设计，审查财务口径、时点可得性与交易成本。",
+      "path": "skills/greenblatt-quality-value-screen/SKILL.md",
+      "sources": "skills/greenblatt-quality-value-screen/references/sources.md",
+      "status": "research-workflow"
+    },
+    {
+      "name": "oneil-growth-confirmation",
+      "title": "欧奈尔：增长确认",
+      "category": "growth-trading",
+      "inspired_by": "William J. O’Neil",
+      "description": "用威廉·欧奈尔公开方法介绍启发的流程交叉检查增长数据与价格成交行为。用于成长候选和突破叙事研究，要求事前样本、财务质量与真实成交约束，不仅凭图形选股。",
+      "path": "skills/oneil-growth-confirmation/SKILL.md",
+      "sources": "skills/oneil-growth-confirmation/references/sources.md",
+      "status": "research-workflow"
     }
   ],
   "packs": [
@@ -145,7 +285,8 @@
         "investment-committee",
         "beijing-first-board-review",
         "yangjia-market-regime",
-        "tuixue-trading-journal"
+        "tuixue-trading-journal",
+        "zhiye-chaoshou-exposure-tempo"
       ]
     },
     {
@@ -166,6 +307,28 @@
         "soros-reflexivity",
         "marks-cycle-risk",
         "yangjia-market-regime"
+      ]
+    },
+    {
+      "id": "china-business-review",
+      "title": "中国企业质量与逆向研究",
+      "skills": [
+        "investment-committee",
+        "duan-business-understanding",
+        "qiu-competition-valuation",
+        "fengliu-visible-risk",
+        "zhangkun-shareholder-cash"
+      ]
+    },
+    {
+      "id": "growth-crosscheck",
+      "title": "成长与趋势交叉检查",
+      "skills": [
+        "investment-committee",
+        "lynch-business-evidence",
+        "fisher-scuttlebutt",
+        "zhanglei-value-creation",
+        "oneil-growth-confirmation"
       ]
     }
   ]

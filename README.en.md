@@ -7,8 +7,9 @@
 [中文](README.md) · [Skill catalog](#skills) · [Examples](examples/README.md) · [Contribute](CONTRIBUTING.md)
 
 Turn public investment ideas into repeatable research workflows for AI agents.
-The library contains **12 skills, including 11 investor-inspired frameworks and 4 task playbooks**, covering business quality,
-portfolio costs, cycles, diversification, and Chinese A-share trading review.
+The library contains **26 skills, including 25 investor-inspired frameworks and 6 task playbooks**, covering business quality,
+portfolio costs, cycles, diversification, Chinese business research, and A-share trading review.
+This includes 13 frameworks associated with Chinese markets and Chinese investors, and 12 international frameworks.
 Skill instructions and examples are currently written in Chinese; an agent can respond in your preferred language.
 
 Each workflow connects **inputs → evidence → reasoning → counterarguments → a reviewable output**.
@@ -23,6 +24,8 @@ The project is independently written and is not endorsed by the named investors 
 | Trading review | Yangjia → Beijing → Tuixue | Market hypotheses, execution events, plan deviations |
 | Portfolio review | Bogle → Dalio → Marks | Costs, common exposures, loss mechanisms |
 | Market narrative | Soros → Marks → Yangjia | Feedback links, competing causes, breakpoints |
+| Chinese business / contrarian research | Duan → Qiu → Feng → Zhang Kun | Knowledge boundaries, value traps, shareholder cash |
+| Growth cross-check | Lynch → Fisher → Zhang Lei → O’Neil | Growth mechanisms, evidence conflicts, execution limits |
 
 Use only the stages relevant to your question. The [playbooks](docs/PLAYBOOKS.md) include installation
 commands and prompts. Start with the [research brief](templates/research-brief.md) when preparing inputs.
@@ -61,20 +64,53 @@ Browsing, data access, and calculation tools come from the host agent. Offline r
 
 ## Skills
 
+See [source coverage and reading limits](docs/SOURCE_COVERAGE.md) for the 14 new frameworks.
+
+### Chinese business and investor frameworks
+
 | Skill | Public framework | Task |
 | --- | --- | --- |
-| [investment-committee](skills/investment-committee/SKILL.md) | Maintainer-authored | Route questions, compare evidence, preserve disagreements |
+| [duan-business-understanding](skills/duan-business-understanding/SKILL.md) | Duan Yongping | Business understanding and culture |
+| [lilu-knowledge-boundary](skills/lilu-knowledge-boundary/SKILL.md) | Li Lu | Knowledge boundaries and independent judgment |
+| [zhanglei-value-creation](skills/zhanglei-value-creation/SKILL.md) | Zhang Lei | Long-term investment and value creation |
+| [qiu-competition-valuation](skills/qiu-competition-valuation/SKILL.md) | Qiu Guolu | Competition, quality and valuation |
+| [fengliu-visible-risk](skills/fengliu-visible-risk/SKILL.md) | Feng Liu | Visible risks and contrarian research |
+| [linyuan-demand-substitution](skills/linyuan-demand-substitution/SKILL.md) | Lin Yuan | Demand persistence and substitution |
+| [danbin-secular-thesis](skills/danbin-secular-thesis/SKILL.md) | Dan Bin | Secular trends and shareholder returns |
+| [zhangkun-shareholder-cash](skills/zhangkun-shareholder-cash/SKILL.md) | Zhang Kun / E Fund disclosures | Cash generation, distributions and dilution |
+| [zhushaoxing-growth-governance](skills/zhushaoxing-growth-governance/SKILL.md) | Zhu Shaoxing / Fullgoal disclosures | Growth quality, governance and price |
+
+### A-share trading review
+
+| Skill | Public framework | Task |
+| --- | --- | --- |
+| [tuixue-trading-journal](skills/tuixue-trading-journal/SKILL.md) | 退学炒股 | Trading impulses, plan deviations, review |
+| [beijing-first-board-review](skills/beijing-first-board-review/SKILL.md) | 北京炒家 | First-limit-up candidates, execution assumptions, exits |
+| [yangjia-market-regime](skills/yangjia-market-regime/SKILL.md) | 炒股养家 | Market-stage hypotheses, competing explanations |
+| [zhiye-chaoshou-exposure-tempo](skills/zhiye-chaoshou-exposure-tempo/SKILL.md) | 职业炒手 (Zhiye Chaoshou) | Exposure, trading tempo and drawdown review |
+
+### International frameworks
+
+| Skill | Public framework | Task |
+| --- | --- | --- |
 | [buffett-business-quality](skills/buffett-business-quality/SKILL.md) | Warren Buffett | Business quality, cash generation, valuation assumptions |
 | [bogle-cost-discipline](skills/bogle-cost-discipline/SKILL.md) | John C. Bogle | Costs, diversification, holding discipline |
 | [marks-cycle-risk](skills/marks-cycle-risk/SKILL.md) | Howard Marks | Cycles, sentiment, permanent loss |
 | [dalio-risk-budgeting](skills/dalio-risk-budgeting/SKILL.md) | Ray Dalio / Bridgewater | Risk concentration, growth and inflation scenarios |
-| [tuixue-trading-journal](skills/tuixue-trading-journal/SKILL.md) | 退学炒股 | Trading impulses, plan deviations, review |
-| [beijing-first-board-review](skills/beijing-first-board-review/SKILL.md) | 北京炒家 | First-limit-up candidates, execution assumptions, exits |
-| [yangjia-market-regime](skills/yangjia-market-regime/SKILL.md) | 炒股养家 | Market-stage hypotheses, competing explanations |
 | [munger-inversion](skills/munger-inversion/SKILL.md) | Charlie Munger | Inversion, incentives, failure paths |
 | [graham-margin-of-safety](skills/graham-margin-of-safety/SKILL.md) | Benjamin Graham | Valuation room, asset quality, value traps |
 | [lynch-business-evidence](skills/lynch-business-evidence/SKILL.md) | Peter Lynch | Turn product observations into business evidence |
 | [soros-reflexivity](skills/soros-reflexivity/SKILL.md) | George Soros | Belief–behavior–fundamental feedback |
+| [fisher-scuttlebutt](skills/fisher-scuttlebutt/SKILL.md) | Philip A. Fisher | Multi-source business research |
+| [templeton-global-comparison](skills/templeton-global-comparison/SKILL.md) | John Templeton | Global value comparisons and real returns |
+| [greenblatt-quality-value-screen](skills/greenblatt-quality-value-screen/SKILL.md) | Joel Greenblatt | Quality/value screening and data integrity |
+| [oneil-growth-confirmation](skills/oneil-growth-confirmation/SKILL.md) | William J. O’Neil | Growth and price/volume confirmation |
+
+### Research routing
+
+| Skill | Public framework | Task |
+| --- | --- | --- |
+| [investment-committee](skills/investment-committee/SKILL.md) | Maintainer-authored | Route questions, compare evidence, preserve disagreements |
 
 Tools can read [skills-index.json](skills-index.json), generated from the catalog and actual skill metadata.
 It is this repository's lightweight index, not proof of third-party registry inclusion.

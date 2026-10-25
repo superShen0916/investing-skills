@@ -1,4 +1,4 @@
-# 从任务开始：四种研究工作流
+# 从任务开始：六种研究工作流
 
 每个包是一组可选技能，按当前问题加载必要部分，不要求每次全部运行。
 不熟悉框架时先调用 investment-committee；没有数据时先得到缺口清单。
@@ -29,11 +29,13 @@ $investment-committee 用附件研究这家公司，先判断增长故事需要�
 **流程：**养家框架比较市场阶段假设 → 北京炒家框架重建候选到退出的事件链 →
 退学炒股框架分开评价判断、执行与结果。历史复盘始终冻结当时可知信息。
 
-**阶段产物：**竞争假设、事件表、行为时间线。
+可用职业炒手框架补查风险判断是否真正落实到仓位与交易节奏。
+
+**阶段产物：**竞争假设、事件表、行为时间线与暴露复盘。
 只有收盘 K 线时不重建盘口；只给精选赢家时不估总体成功率。
 
 ```bash
-npx skills add superShen0916/investing-skills --skill investment-committee yangjia-market-regime beijing-first-board-review tuixue-trading-journal -a codex
+npx skills add superShen0916/investing-skills --skill investment-committee yangjia-market-regime beijing-first-board-review tuixue-trading-journal zhiye-chaoshou-exposure-tempo -a codex
 ```
 
 ```text
@@ -77,6 +79,46 @@ npx skills add superShen0916/investing-skills --skill investment-committee soros
 ```text
 $investment-committee 检查这个主题的“价格—融资—经营—预期”链条。
 逐条找证据，列出共同外因和断点，不推断确定的见顶日期。
+```
+
+## 5. 中国企业质量与逆向研究
+
+**输入：**公司业务解释、竞争格局、价格与负面事实时间线、财报和现金分配资料。
+
+**流程：**段永平框架检查是否懂生意 → 邱国鹭框架交叉审竞争与价格 →
+若论点依赖大跌后恢复，用冯柳框架承认悲观解释并研究存续 → 张坤框架追现金到股东。
+
+**阶段产物：**理解边界、正常化盈利、已呈现与未解除风险、股东现金桥。
+不要求每个框架都同意；恢复能力不清时，不因低估值继续推出价格结论。
+
+```bash
+npx skills add superShen0916/investing-skills --skill investment-committee duan-business-understanding qiu-competition-valuation fengliu-visible-risk zhangkun-shareholder-cash -a codex
+```
+
+```text
+$investment-committee 这家公司跌了很多，我认为只是市场悲观。请先检查我是否懂它的生意，
+再审竞争、估值和最强悲观解释，最后核查现金能否回到股东。保留价值陷阱的可能性。
+```
+
+## 6. 成长与趋势交叉检查
+
+**输入：**增长故事、产品资料、已获授权使用的调查记录、长期投入、价格成交与事前候选。
+
+**流程：**林奇框架拆增长 → 费雪框架设计交叉核实 → 张磊框架查投入是否创造价值 →
+仅当问题涉及价格与交易时，用欧奈尔框架审查事前候选、价量与成交限制。
+若核心疑问是产业方向，可改用但斌框架区分趋势、公司和价格三个命题。
+
+**阶段产物：**可推翻的成长假设、材料角色图、投入结果链、价格证据与执行缺口。
+设计调查不代表已经访谈；增长成立不代表适合追涨。
+
+```bash
+npx skills add superShen0916/investing-skills --skill investment-committee lynch-business-evidence fisher-scuttlebutt zhanglei-value-creation oneil-growth-confirmation -a codex
+```
+
+```text
+$investment-committee 请检查这家热门成长公司的论点：把增长故事转成假设，
+核查不同角色的材料是否独立、长期投入是否兑现价值，再单独讨论价量证据。
+缺事前候选与真实成交资料时，不声称已验证突破策略。
 ```
 
 ## 使用与安装范围

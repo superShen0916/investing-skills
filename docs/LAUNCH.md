@@ -4,7 +4,7 @@
 
 ## GitHub About
 
-Source-backed investing skills for AI agents: Buffett, Bogle, Marks, Dalio and Chinese A-share trading frameworks. 原始出处、反证清单与交易复盘。
+Source-backed investing skills for AI agents: Buffett, Duan Yongping, Li Lu and 25 investor frameworks, including Chinese A-share trading review. 原始出处、反证清单与交易复盘。
 
 ## 建议 Topics
 
@@ -14,11 +14,12 @@ Source-backed investing skills for AI agents: Buffett, Bogle, Marks, Dalio and C
 
 我把巴菲特、退学炒股、炒股养家等人的公开投资思想，整理成了一个 Agent Skills 开源库。
 
-目前 12 个技能、11 套人物框架：研究企业生意、检查投资成本、分析周期风险、穿透组合暴露，以及复盘
+目前 26 个技能、25 套人物框架：研究企业生意、检查投资成本、分析周期风险、穿透组合暴露，以及复盘
 A 股首板、市场阶段和交易冲动。每个技能附原始出处，并区分作者观点与我整理的流程。
 
-新增芒格的反向思考、格雷厄姆的安全边际、林奇的经营证据、索罗斯的反身性研究。
-不知道从哪里开始，可以按企业研究、交易复盘、组合审查、市场叙事四种任务选工作流。
+这次一口气补了14套：段永平、李录、张磊、邱国鹭、冯柳、林园、但斌、张坤、朱少醒、职业炒手，
+以及费雪、邓普顿、格林布拉特、欧奈尔。覆盖理解生意、价值创造、逆向证据、股东现金、成长调查和筛选研究。
+不知道从哪里开始，可以按企业研究、交易复盘、组合审查、市场叙事、中国企业与逆向研究、成长交叉检查六种任务选工作流。
 
 我最想做的一个功能是“同题多流派”：给同一份公司资料，长期投资框架与短期交易框架
 会关注什么、缺什么证据、为什么得出不同判断？结果会保留分歧，让人能继续核查。

@@ -1,28 +1,257 @@
 {
   "name": "investing-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "language": "zh-CN",
   "format": "Agent Skills",
   "validation_scope": "Structure and local references only; no investment performance validation.",
   "skills": [
-    {"id": "investment-committee", "title": "投资研究委员会", "category": "orchestration", "inspired_by": "维护者原创", "status": "research-workflow"},
-    {"id": "buffett-business-quality", "title": "巴菲特：生意质量", "category": "fundamental", "inspired_by": "Warren Buffett", "status": "research-workflow"},
-    {"id": "bogle-cost-discipline", "title": "博格：成本纪律", "category": "portfolio", "inspired_by": "John C. Bogle", "status": "research-workflow"},
-    {"id": "marks-cycle-risk", "title": "马克斯：周期与风险", "category": "risk", "inspired_by": "Howard Marks", "status": "research-workflow"},
-    {"id": "dalio-risk-budgeting", "title": "达利欧：风险分散", "category": "portfolio", "inspired_by": "Ray Dalio / Bridgewater", "status": "research-workflow"},
-    {"id": "tuixue-trading-journal", "title": "退学炒股：交易复盘", "category": "behavior", "inspired_by": "退学炒股", "status": "research-workflow"},
-    {"id": "beijing-first-board-review", "title": "北京炒家：首板研究", "category": "short-term", "inspired_by": "北京炒家", "status": "research-workflow"},
-    {"id": "yangjia-market-regime", "title": "炒股养家：市场阶段", "category": "short-term", "inspired_by": "炒股养家", "status": "research-workflow"},
-    {"id": "munger-inversion", "title": "芒格：反向思考", "category": "risk", "inspired_by": "Charlie Munger", "status": "research-workflow"},
-    {"id": "graham-margin-of-safety", "title": "格雷厄姆：安全边际", "category": "fundamental", "inspired_by": "Benjamin Graham", "status": "research-workflow"},
-    {"id": "lynch-business-evidence", "title": "彼得·林奇：经营证据", "category": "fundamental", "inspired_by": "Peter Lynch", "status": "research-workflow"},
-    {"id": "soros-reflexivity", "title": "索罗斯：反身性", "category": "macro", "inspired_by": "George Soros", "status": "research-workflow"}
+    {
+      "id": "investment-committee",
+      "title": "投资研究委员会",
+      "category": "orchestration",
+      "inspired_by": "维护者原创",
+      "status": "research-workflow"
+    },
+    {
+      "id": "buffett-business-quality",
+      "title": "巴菲特：生意质量",
+      "category": "fundamental",
+      "inspired_by": "Warren Buffett",
+      "status": "research-workflow"
+    },
+    {
+      "id": "bogle-cost-discipline",
+      "title": "博格：成本纪律",
+      "category": "portfolio",
+      "inspired_by": "John C. Bogle",
+      "status": "research-workflow"
+    },
+    {
+      "id": "marks-cycle-risk",
+      "title": "马克斯：周期与风险",
+      "category": "risk",
+      "inspired_by": "Howard Marks",
+      "status": "research-workflow"
+    },
+    {
+      "id": "dalio-risk-budgeting",
+      "title": "达利欧：风险分散",
+      "category": "portfolio",
+      "inspired_by": "Ray Dalio / Bridgewater",
+      "status": "research-workflow"
+    },
+    {
+      "id": "tuixue-trading-journal",
+      "title": "退学炒股：交易复盘",
+      "category": "behavior",
+      "inspired_by": "退学炒股",
+      "status": "research-workflow"
+    },
+    {
+      "id": "beijing-first-board-review",
+      "title": "北京炒家：首板研究",
+      "category": "short-term",
+      "inspired_by": "北京炒家",
+      "status": "research-workflow"
+    },
+    {
+      "id": "yangjia-market-regime",
+      "title": "炒股养家：市场阶段",
+      "category": "short-term",
+      "inspired_by": "炒股养家",
+      "status": "research-workflow"
+    },
+    {
+      "id": "munger-inversion",
+      "title": "芒格：反向思考",
+      "category": "risk",
+      "inspired_by": "Charlie Munger",
+      "status": "research-workflow"
+    },
+    {
+      "id": "graham-margin-of-safety",
+      "title": "格雷厄姆：安全边际",
+      "category": "fundamental",
+      "inspired_by": "Benjamin Graham",
+      "status": "research-workflow"
+    },
+    {
+      "id": "lynch-business-evidence",
+      "title": "彼得·林奇：经营证据",
+      "category": "fundamental",
+      "inspired_by": "Peter Lynch",
+      "status": "research-workflow"
+    },
+    {
+      "id": "soros-reflexivity",
+      "title": "索罗斯：反身性",
+      "category": "macro",
+      "inspired_by": "George Soros",
+      "status": "research-workflow"
+    },
+    {
+      "id": "duan-business-understanding",
+      "title": "段永平：生意理解",
+      "category": "fundamental",
+      "inspired_by": "段永平",
+      "status": "research-workflow"
+    },
+    {
+      "id": "lilu-knowledge-boundary",
+      "title": "李录：知识边界",
+      "category": "fundamental",
+      "inspired_by": "李录",
+      "status": "research-workflow"
+    },
+    {
+      "id": "zhanglei-value-creation",
+      "title": "张磊：价值创造",
+      "category": "fundamental",
+      "inspired_by": "张磊",
+      "status": "research-workflow"
+    },
+    {
+      "id": "qiu-competition-valuation",
+      "title": "邱国鹭：格局与估值",
+      "category": "fundamental",
+      "inspired_by": "邱国鹭",
+      "status": "research-workflow"
+    },
+    {
+      "id": "fengliu-visible-risk",
+      "title": "冯柳：风险呈现",
+      "category": "risk",
+      "inspired_by": "冯柳",
+      "status": "research-workflow"
+    },
+    {
+      "id": "linyuan-demand-substitution",
+      "title": "林园：需求与替代",
+      "category": "fundamental",
+      "inspired_by": "林园",
+      "status": "research-workflow"
+    },
+    {
+      "id": "danbin-secular-thesis",
+      "title": "但斌：产业趋势",
+      "category": "fundamental",
+      "inspired_by": "但斌",
+      "status": "research-workflow"
+    },
+    {
+      "id": "zhangkun-shareholder-cash",
+      "title": "张坤：股东现金",
+      "category": "fundamental",
+      "inspired_by": "张坤 / 易方达公开报告",
+      "status": "research-workflow"
+    },
+    {
+      "id": "zhushaoxing-growth-governance",
+      "title": "朱少醒：成长与治理",
+      "category": "fundamental",
+      "inspired_by": "朱少醒 / 富国公开报告",
+      "status": "research-workflow"
+    },
+    {
+      "id": "zhiye-chaoshou-exposure-tempo",
+      "title": "职业炒手：仓位与节奏",
+      "category": "short-term",
+      "inspired_by": "职业炒手",
+      "status": "research-workflow"
+    },
+    {
+      "id": "fisher-scuttlebutt",
+      "title": "菲利普·费雪：多方调查",
+      "category": "fundamental",
+      "inspired_by": "Philip A. Fisher",
+      "status": "research-workflow"
+    },
+    {
+      "id": "templeton-global-comparison",
+      "title": "邓普顿：全球比较",
+      "category": "portfolio",
+      "inspired_by": "John Templeton",
+      "status": "research-workflow"
+    },
+    {
+      "id": "greenblatt-quality-value-screen",
+      "title": "格林布拉特：质量与价格",
+      "category": "systematic",
+      "inspired_by": "Joel Greenblatt",
+      "status": "research-workflow"
+    },
+    {
+      "id": "oneil-growth-confirmation",
+      "title": "欧奈尔：增长确认",
+      "category": "growth-trading",
+      "inspired_by": "William J. O’Neil",
+      "status": "research-workflow"
+    }
   ],
   "packs": [
-    {"id": "company-diligence", "title": "企业研究", "skills": ["investment-committee", "buffett-business-quality", "lynch-business-evidence", "graham-margin-of-safety", "munger-inversion"]},
-    {"id": "trade-review", "title": "交易复盘", "skills": ["investment-committee", "beijing-first-board-review", "yangjia-market-regime", "tuixue-trading-journal"]},
-    {"id": "portfolio-review", "title": "组合审查", "skills": ["investment-committee", "bogle-cost-discipline", "dalio-risk-budgeting", "marks-cycle-risk"]},
-    {"id": "market-feedback", "title": "市场叙事", "skills": ["investment-committee", "soros-reflexivity", "marks-cycle-risk", "yangjia-market-regime"]}
+    {
+      "id": "company-diligence",
+      "title": "企业研究",
+      "skills": [
+        "investment-committee",
+        "buffett-business-quality",
+        "lynch-business-evidence",
+        "graham-margin-of-safety",
+        "munger-inversion"
+      ]
+    },
+    {
+      "id": "trade-review",
+      "title": "交易复盘",
+      "skills": [
+        "investment-committee",
+        "beijing-first-board-review",
+        "yangjia-market-regime",
+        "tuixue-trading-journal",
+        "zhiye-chaoshou-exposure-tempo"
+      ]
+    },
+    {
+      "id": "portfolio-review",
+      "title": "组合审查",
+      "skills": [
+        "investment-committee",
+        "bogle-cost-discipline",
+        "dalio-risk-budgeting",
+        "marks-cycle-risk"
+      ]
+    },
+    {
+      "id": "market-feedback",
+      "title": "市场叙事",
+      "skills": [
+        "investment-committee",
+        "soros-reflexivity",
+        "marks-cycle-risk",
+        "yangjia-market-regime"
+      ]
+    },
+    {
+      "id": "china-business-review",
+      "title": "中国企业质量与逆向研究",
+      "skills": [
+        "investment-committee",
+        "duan-business-understanding",
+        "qiu-competition-valuation",
+        "fengliu-visible-risk",
+        "zhangkun-shareholder-cash"
+      ]
+    },
+    {
+      "id": "growth-crosscheck",
+      "title": "成长与趋势交叉检查",
+      "skills": [
+        "investment-committee",
+        "lynch-business-evidence",
+        "fisher-scuttlebutt",
+        "zhanglei-value-creation",
+        "oneil-growth-confirmation"
+      ]
+    }
   ]
 }
-
