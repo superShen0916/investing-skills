@@ -1,2 +1,160 @@
-# investing-skills
-Source-backed investing skills for AI agents: Buffett, Bogle, Marks, Dalio and Chinese A-share trading frameworks. 原始出处、反证清单与交易复盘。
+<p align="center">
+  <img src="assets/cover.svg" alt="Investing Skills — Investment thinking. Executable workflows." width="100%">
+</p>
+
+<h1 align="center">Investing Skills · 投资方法论技能库</h1>
+
+<p align="center"><strong>从巴菲特到炒股养家，把公开投资思想变成 AI 能执行的研究流程。</strong></p>
+<p align="center">8 个 Skills · 7 套人物框架 · 原始出处 · 反证清单 · 中文 A 股经验</p>
+<p align="center"><a href="README.en.md">English</a> · <a href="#快速开始">快速开始</a> · <a href="#技能目录">技能目录</a> · <a href="examples/README.md">看示例</a> · <a href="CONTRIBUTING.md">参与共建</a></p>
+
+问 AI“这只股票怎么样”，容易得到一份面面俱到、难以核查的回答。
+
+**把你想采用的研究方法也交给它。**
+
+```text
+用巴菲特框架研究这家公司的现金创造能力，找出最脆弱的估值假设。
+用退学炒股的公开经验复盘这份日志：我为什么在连续赚钱后偏离计划？
+用炒股养家的阶段框架分析这份盘面材料，同时保留另一种解释。
+```
+
+本库把分散在股东信、机构文章和本人原帖里的公开观点，整理成
+**输入 → 取证 → 判断 → 反证 → 输出**的 Agent Skills。每个技能附来源、适用条件和失效情形。
+
+## 先看它能产出什么
+
+> **输入：**“公司收入和现金流持续增长，今天又因消息涨停。适合持有三年吗？明天能追吗？”
+
+| 研究视角 | 应该回答的问题 | 必须保留的未知 |
+| --- | --- | --- |
+| 巴菲特：生意质量 | 客户为何付款？增长是否需要持续追加资本？价格隐含什么假设？ | 缺竞争与现金流证据时，无法论证持久优势 |
+| 北京炒家：首板研究 | 候选如何事前产生？买得到吗？隔日退出规则是什么？ | 缺盘中数据时，无法重建排队与成交 |
+| 马克斯：周期风险 | 好消息是否已经反映在价格里？最可能怎样发生永久损失？ | 没有证据时，不能判定处于周期顶底 |
+
+**研究委员会保留这些分歧，分别说明期限、证据和下一步核查。**
+这比给三位“大师”各投一票，更接近可以复查的研究过程。
+
+完整演示：[同一家公司，两种期限](examples/multi-framework-review.md) · [连续盈利后的交易复盘](examples/trading-journal-review.md)。
+以上均为虚构数据、人工编写的输出示意，不是回测或模型实测业绩。
+
+另保留了一次[独立代理的离线实际执行记录](docs/evaluations/2026-10-26-committee.md)：
+在材料不足且要求“80% 赚钱”的任务中，输出了可核查计算、双期限比较和证据缺口。
+这是一次行为观察，尚不能证明多轮稳定性或投资能力。
+
+## 快速开始
+
+### 通过 Skills CLI 安装
+
+需要已安装 Node.js 的环境，以及支持 Agent Skills 的客户端。
+
+```bash
+# 交互选择需要的技能与客户端
+npx skills add superShen0916/investing-skills
+
+# 只安装一个框架到 Codex
+npx skills add superShen0916/investing-skills --skill buffett-business-quality -a codex
+
+# 先查看技能列表
+npx skills add superShen0916/investing-skills --list
+```
+
+安装器由 [vercel-labs/skills](https://github.com/vercel-labs/skills) 提供；选项与环境要求见其
+[官方命令说明](https://github.com/vercel-labs/skills/blob/main/docs/commands.md)。安装不授予证券账户访问权限。
+
+### 手动安装
+
+将所需技能的**整个目录**（含 `references/`）复制到客户端的技能目录：
+
+| 客户端 | 当前项目 | 用户全局 |
+| --- | --- | --- |
+| Codex | `.agents/skills/` | `~/.agents/skills/` |
+| Claude Code | `.claude/skills/` | `~/.claude/skills/` |
+
+例如，在你的研究项目中，把下载的 `buffett-business-quality/` 放进 `.agents/skills/`，
+确认最终路径为 `.agents/skills/buffett-business-quality/SKILL.md`。
+
+格式与目录依据：[Agent Skills](https://agentskills.io/specification)、[OpenAI Docs](https://learn.chatgpt.com/docs/build-skills)、
+[Claude Code 文档](https://code.claude.com/docs/en/skills)。当前版本完成格式与本地引用校验；客户端安装兼容性尚未逐项实测。
+
+### 调用
+
+安装后在 Codex 中使用：
+
+```text
+$buffett-business-quality 分析我附上的年报，重点审查现金流和资本配置。
+$tuixue-trading-journal 复盘这份交易日志，把执行偏离与策略问题分开。
+$investment-committee 比较这份研究材料的长期价值与短期交易逻辑。
+```
+
+Claude Code 使用 `/buffett-business-quality` 等技能名称。研究委员会会按问题选择框架；
+如需调用人物技能，请一起安装相应目录。浏览、行情、计算等能力由你的客户端提供，
+没有实时数据时仍可对用户材料做离线研究。
+
+## 技能目录
+
+| Skill | 思想来源 | 主要任务 | 典型产物 |
+| --- | --- | --- | --- |
+| [investment-committee](skills/investment-committee/SKILL.md) | 维护者原创 | 选择框架、比较观点、解释分歧 | 证据对照与后续核查清单 |
+| [buffett-business-quality](skills/buffett-business-quality/SKILL.md) | 巴菲特股东信 | 生意、竞争优势、现金创造、价格 | 可证伪的企业研究备忘录 |
+| [bogle-cost-discipline](skills/bogle-cost-discipline/SKILL.md) | 约翰·博格公开演讲 | 成本、分散、持有与执行纪律 | 同风险口径的成本比较 |
+| [marks-cycle-risk](skills/marks-cycle-risk/SKILL.md) | 霍华德·马克斯备忘录 | 周期、市场心理与永久损失 | 风险情景与反方论点 |
+| [dalio-risk-budgeting](skills/dalio-risk-budgeting/SKILL.md) | 达利欧／桥水公开研究 | 风险穿透、增长与通胀情景 | 组合风险与压力路径 |
+| [tuixue-trading-journal](skills/tuixue-trading-journal/SKILL.md) | 退学炒股本人原帖 | 踏空、膨胀、回本冲动与计划偏离 | 交易时间线与纠错实验 |
+| [beijing-first-board-review](skills/beijing-first-board-review/SKILL.md) | 北京炒家公开专访、本人帖子 | 首板候选、真实成交、隔日退出 | 事件链与策略缺口审查 |
+| [yangjia-market-regime](skills/yangjia-market-regime/SKILL.md) | 炒股养家本人文章 | 市场阶段、参与者心理与应变 | 竞争假设与失效条件 |
+
+人物姓名帮助识别思想来源。所有技能均由维护者独立编写，不代表本人授权、背书或完整策略。
+
+## 为什么要保留原始出处
+
+互联网上的投资经验，经常经过转述、裁剪和重新命名。
+本库把下面三件事分开记录：
+
+- **原作者说过什么**：链接本人原文或原机构材料，注明日期与定位方式。
+- **维护者如何整理**：表格、研究问题、验证步骤明确标为原创操作化。
+- **哪些仍未验证**：阈值、概率、收益和当前适用性，没有证据就保留为空。
+
+`references/sources.md` 随技能分发。来源核查不等于交易业绩验证，
+历史经验用于今天时需要重新取证。完整标准见 [方法说明](docs/METHODOLOGY.md)。
+
+## 项目结构与检查
+
+```text
+skills/                 可单独安装的技能
+  <name>/SKILL.md       触发说明与研究流程
+  <name>/references/    来源与归因
+examples/               标注为虚构的离线演示
+catalog.json            机器可读目录
+scripts/validate.py     格式、目录、来源记录与本地链接检查
+```
+
+技能内容本身没有代码运行时依赖。维护者检查需要 Python 3.10+：
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python scripts/validate.py
+```
+
+检查不会联网，不验证外部链接实时可用性、客户端兼容性或投资收益。
+
+## 一起补齐投资思想的“最后一公里”
+
+欢迎贡献：原始出处、反例、实际使用失败记录、英文版，以及新框架。
+下一批可研究方向包括 Graham、Munger、Lynch、Livermore；在完成前不计入现有技能。
+
+从 [贡献指南](CONTRIBUTING.md) 开始。分享时可以直接链接某个技能或演示，
+也可以用同一份公开材料比较不同框架，提交你发现的分歧。
+
+相关项目：[AI Hedge Fund](https://github.com/virattt/ai-hedge-fund)、
+[Buffett Skills](https://github.com/agi-now/buffett-skills)、
+[Claude Trading Skills](https://github.com/tradermonty/claude-trading-skills)。
+本库聚焦公开观点的来源、中文 A 股经验和可复查的研究流程。
+
+## 使用范围与许可
+
+当前版本是研究工作流预览，尚未验证投资业绩。技能可以辅助分析、学习与复盘，
+不会接收资金、托管账户或自动下单，也不能承诺收益或复刻人物交易能力。
+
+原创内容采用 [MIT License](LICENSE)。外部原文保留各自权利，详见 [NOTICE](NOTICE.md)。
+

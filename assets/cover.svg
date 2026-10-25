@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="460" viewBox="0 0 1280 460" role="img" aria-labelledby="title desc">
+  <title id="title">Investing Skills</title>
+  <desc id="desc">Investment thinking distilled into source-backed agent skills. Value, risk, market context and trading review.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#20433f" stroke-width=".7"/></pattern>
+    <linearGradient id="shade"><stop stop-color="#102d29"/><stop offset="1" stop-color="#091e1e"/></linearGradient>
+  </defs>
+  <rect width="1280" height="460" rx="24" fill="url(#shade)"/>
+  <rect width="1280" height="460" rx="24" fill="url(#grid)" opacity=".55"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="64" y="52" width="163" height="28" rx="14" fill="#c9f397"/>
+    <text x="145" y="71" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle" fill="#14332a">OPEN AGENT SKILLS</text>
+    <text x="60" y="164" fill="#f2f3e9" font-size="76" font-weight="700" letter-spacing="-3">Investing Skills</text>
+    <text x="64" y="213" fill="#b3c8be" font-size="24">Investment thinking. Executable workflows.</text>
+    <path d="M64 246H1216" stroke="#38544c"/>
+    <g font-size="16" fill="#e4eddf">
+      <rect x="64" y="280" width="242" height="64" rx="10" fill="#1a3831" stroke="#45604d"/>
+      <text x="88" y="318">01  Original sources</text>
+      <rect x="334" y="280" width="264" height="64" rx="10" fill="#1a3831" stroke="#45604d"/>
+      <text x="358" y="318">02  Research questions</text>
+      <rect x="626" y="280" width="264" height="64" rx="10" fill="#1a3831" stroke="#45604d"/>
+      <text x="650" y="318">03  Evidence &amp; critique</text>
+      <rect x="918" y="280" width="298" height="64" rx="10" fill="#c9f397"/>
+      <text x="942" y="318" fill="#14332a" font-weight="700">04  Reviewable decisions</text>
+    </g>
+    <text x="64" y="402" font-size="13" fill="#9fb7a8" letter-spacing="1.3">VALUE INVESTING  /  A-SHARE TRADING  /  PORTFOLIO RISK  /  DECISION REVIEW</text>
+    <text x="1214" y="402" font-size="13" fill="#c9f397" text-anchor="end">v0.1</text>
+  </g>
+</svg>
+

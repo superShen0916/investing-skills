@@ -1,0 +1,18 @@
+{
+  "name": "investing-skills",
+  "version": "0.1.0",
+  "language": "zh-CN",
+  "format": "Agent Skills",
+  "validation_scope": "Structure and local references only; no investment performance validation.",
+  "skills": [
+    {"id": "investment-committee", "title": "投资研究委员会", "category": "orchestration", "inspired_by": "维护者原创", "status": "research-workflow"},
+    {"id": "buffett-business-quality", "title": "巴菲特：生意质量", "category": "fundamental", "inspired_by": "Warren Buffett", "status": "research-workflow"},
+    {"id": "bogle-cost-discipline", "title": "博格：成本纪律", "category": "portfolio", "inspired_by": "John C. Bogle", "status": "research-workflow"},
+    {"id": "marks-cycle-risk", "title": "马克斯：周期与风险", "category": "risk", "inspired_by": "Howard Marks", "status": "research-workflow"},
+    {"id": "dalio-risk-budgeting", "title": "达利欧：风险分散", "category": "portfolio", "inspired_by": "Ray Dalio / Bridgewater", "status": "research-workflow"},
+    {"id": "tuixue-trading-journal", "title": "退学炒股：交易复盘", "category": "behavior", "inspired_by": "退学炒股", "status": "research-workflow"},
+    {"id": "beijing-first-board-review", "title": "北京炒家：首板研究", "category": "short-term", "inspired_by": "北京炒家", "status": "research-workflow"},
+    {"id": "yangjia-market-regime", "title": "炒股养家：市场阶段", "category": "short-term", "inspired_by": "炒股养家", "status": "research-workflow"}
+  ]
+}
+
