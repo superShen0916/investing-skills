@@ -1,4 +1,4 @@
-# 从任务开始：六种研究工作流
+# 从任务开始：八种研究入口与一个娱乐包
 
 每个包是一组可选技能，按当前问题加载必要部分，不要求每次全部运行。
 不熟悉框架时先调用 investment-committee；没有数据时先得到缺口清单。
@@ -120,6 +120,67 @@ $investment-committee 请检查这家热门成长公司的论点：把增长故�
 核查不同角色的材料是否独立、长期投入是否兑现价值，再单独讨论价量证据。
 缺事前候选与真实成交资料时，不声称已验证突破策略。
 ```
+
+## 7. 社区人物
+
+**输入：**自己的交易经历、事前计划和当时可知的市场资料。先选人物关注的问题，
+再决定要补哪些研究步骤；不要求给所有社区人物逐个投票。
+
+**可选流程：**养家看环境 → 北京炒家看首板事件 → 涅盘重升看依据怎样失效 →
+职业炒手看暴露与节奏 → 退学炒股看计划偏离。92科比的题材切换技能目前来源受限，引用时保留这一说明。
+
+```bash
+npx skills add superShen0916/investing-skills --skill investment-committee yangjia-market-regime beijing-first-board-review niepan-decision-review zhiye-chaoshou-exposure-tempo tuixue-trading-journal kobe92-theme-rotation -a codex
+```
+
+```text
+$investment-committee 请按社区交易者框架复盘这份日志，只选与问题相关的两种方法。
+先恢复当时环境，再看依据何时消失；引用转帖材料时不要冒充本人原文。
+```
+
+雪球与指数社区可单独安装 `luosiding-index-valuation` 和 `etf-world-position-plan`。
+人物身份与补源方向见[社区地图](COMMUNITY_MAP.md)。
+
+## 8. 交易流派
+
+**输入：**证券、研究时点、价量／盘口、已有规则与实际成交。先声明想研究的流派。
+
+| 流派 | 主技能 | 最关键的核查 |
+| --- | --- | --- |
+| 缠论 | chanlun-structure-review | 级别、规则版本、结构端点与实际确认时间 |
+| 打板 | limit-up-execution-review | 触发、排队、实际成交与隔日退出 |
+| 龙头战法 | leader-relay-review | 当时的完整候选梯队，是否事后才叫龙头 |
+| 低吸 | pullback-rebound-review | 相对哪个参照算低，继续下跌怎么办 |
+| 趋势突破 | trend-breakout-review | 盘中触及与收盘确认，最早可交易时刻 |
+| 网格 | grid-path-review | 资金、库存与总资产，不能只看配对小赚 |
+
+```bash
+npx skills add superShen0916/investing-skills --skill investment-committee chanlun-structure-review limit-up-execution-review leader-relay-review pullback-rebound-review trend-breakout-review grid-path-review -a codex
+```
+
+```text
+$chanlun-structure-review 按我附上的规则版本，复核这份截至某时刻的标注。
+分别列端点时间和实际确认时间，不使用后来的K线。
+$limit-up-execution-review 检查这份打板回测，把封板、成交、扣费盈利的分母分别列出。
+$grid-path-review 检查这张网格交易表，分别核算配对利润、期末浮亏和总资产。
+```
+
+## 9. 梗股学（原创娱乐）
+
+**输入：**用户明确要求玩梗、写搞笑文案或轻度吐槽；不需要强制提交研究资料。
+孙宇晨用于热搜与价值的反差，峰哥用于清仓踏空追回的循环，户晨风用于品牌标签与估值的反差。
+所有示例均为项目原创，不是本人语录或投资方法。
+
+```bash
+npx skills add superShen0916/investing-skills --skill justin-sun-headline-roast fengge-fomo-roast huchenfeng-brand-roast -a codex
+```
+
+```text
+$fengge-fomo-roast 用这段虚构交易经历整两句活，再给一个可核查的问题。
+```
+
+见[三个原创演示](../examples/meme-clinic.md)。娱乐包有显式用途标记，不能混入研究包，
+研究委员会也不把段子当支持意见或反向信号。
 
 ## 使用与安装范围
 

@@ -13,7 +13,12 @@ Skills are reusable research and review instructions, not trained replicas of
 investors. They do not reproduce an investor's private reasoning, establish a
 profitable strategy, provide investment management, or execute transactions.
 
+Entries explicitly marked `satire` are original entertainment, not research
+frameworks or quotations. Public names and events identify the humorous context;
+they do not imply authorship, endorsement, affiliation, or trading effectiveness.
+
 中文：本项目中的“蒸馏”指将公开观点重新组织为原创研究流程。原始观点、
 维护者的操作化解释、假设示例及尚待验证的判断应分别标明。人物姓名用于
 来源识别，不代表授权或背书；外部文章与书籍不随本项目重新授权。
+标为娱乐的技能是原创文案，人物仅用于识别公共语境，不冒充本人语录或投资方法。
 

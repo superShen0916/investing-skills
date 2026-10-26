@@ -49,6 +49,22 @@ class DiscoveryIndexTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "pack"):
             BUILDER.make_index(self.root)
 
+    def test_research_pack_rejects_entertainment_skill(self):
+        path = self.root / "catalog.json"
+        data = json.loads(path.read_text())
+        satire = next(item["id"] for item in data["skills"] if item["kind"] == "satire")
+        data["packs"][0]["skills"].append(satire)
+        path.write_text(json.dumps(data))
+        with self.assertRaisesRegex(ValueError, "cannot include satire"):
+            BUILDER.make_index(self.root)
+
+    def test_explicit_entertainment_pack_remains_discoverable(self):
+        index = BUILDER.make_index(self.root)
+        kinds = {item["name"]: item["kind"] for item in index["skills"]}
+        packs = [pack for pack in index["packs"] if pack.get("purpose") == "entertainment"]
+        self.assertTrue(packs)
+        self.assertTrue(all(kinds[slug] == "satire" for pack in packs for slug in pack["skills"]))
+
 
 if __name__ == "__main__":
     unittest.main()

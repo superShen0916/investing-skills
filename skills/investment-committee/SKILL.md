@@ -17,6 +17,11 @@ description: "按投资期限与研究问题选择合适的投资框架，比较
 
 ## 选择框架
 
+先区分社区交易者、企业与组合投资者、交易流派的具体用途，不因人物都知名就视为同一类策略。
+目录中 `kind: satire` 的技能仅供用户明确要求的娱乐，不能作为投研证据、反向信号或投票成员。
+用户要同时看段子与研究时分别标明；段子中的原创情节不进入事实表。
+`source-limited-workflow` 只代表转述材料启发的有限研究，引用时保留原始归属待核对的限制。
+
 仅加载能回答当前问题的技能，通常先选一个主框架，再选一个反方框架。
 下列技能若能被客户端发现，按名称调用；用户已授权读取本库时，也可按实际存在的路径
 读取相应 SKILL.md 与按需参考资料，无需声称已安装。单独安装本技能时，不假定相邻文件存在；
@@ -46,6 +51,15 @@ description: "按投资期限与研究问题选择合适的投资框架，比较
 | 质量和低价筛选是否可信 | greenblatt-quality-value-screen | graham-margin-of-safety：会计异常与价值陷阱 |
 | 成长与突破证据是否一致 | oneil-growth-confirmation | lynch-business-evidence：经营假设是否真实 |
 | 风险判断有没有落实到仓位 | zhiye-chaoshou-exposure-tempo | tuixue-trading-journal：规则不清还是执行偏离 |
+| 已有交易依据什么时候消失 | niepan-decision-review | tuixue-trading-journal：事前记录与事后解释 |
+| 题材延续、补涨还是切换 | kobe92-theme-rotation | yangjia-market-regime：保留竞争解释；前者来源受限 |
+| 指数估值表能支持投入计划吗 | luosiding-index-valuation | etf-world-position-plan：资金边界与路径 |
+| 缠论标注当时已经确认吗 | chanlun-structure-review | 检查规则版本、确认延迟与未来信息 |
+| 打板是否买得到、能退出 | limit-up-execution-review | beijing-first-board-review：人物材料提供的有限主题 |
+| 龙头是事前识别还是事后命名 | leader-relay-review | kobe92-theme-rotation：候选与阶段解释 |
+| 低吸、反弹与反转有何区别 | pullback-rebound-review | marks-cycle-risk：继续恶化的路径 |
+| 放量突破怎样验证 | trend-breakout-review | oneil-growth-confirmation：增长证据与价格证据分开 |
+| 网格小赚但账户总亏为何发生 | grid-path-review | etf-world-position-plan：现金和仓位约束 |
 
 ## 取证与比较
 

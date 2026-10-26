@@ -4,7 +4,7 @@
 
 ## GitHub About
 
-Source-backed investing skills for AI agents: Buffett, Duan Yongping, Li Lu and 25 investor frameworks, including Chinese A-share trading review. 原始出处、反证清单与交易复盘。
+Source-backed investing skills for AI agents: 39 investing skills: community traders, investment frameworks, Chan theory, limit-up research and opt-in original market humor. 原始出处、反证清单与交易复盘。
 
 ## 建议 Topics
 
@@ -12,24 +12,25 @@ Source-backed investing skills for AI agents: Buffett, Duan Yongping, Li Lu and 
 
 ## 中文发布稿
 
-我把巴菲特、退学炒股、炒股养家等人的公开投资思想，整理成了一个 Agent Skills 开源库。
+从巴菲特到炒股养家，再到缠论、打板和“我已经退出股市了”。
 
-目前 26 个技能、25 套人物框架：研究企业生意、检查投资成本、分析周期风险、穿透组合暴露，以及复盘
-A 股首板、市场阶段和交易冲动。每个技能附原始出处，并区分作者观点与我整理的流程。
+我做了一个39个技能的投资研究开源库：29套人物研究、6类交易流派、3个原创娱乐模式和1个研究路由。
 
-这次一口气补了14套：段永平、李录、张磊、邱国鹭、冯柳、林园、但斌、张坤、朱少醒、职业炒手，
-以及费雪、邓普顿、格林布拉特、欧奈尔。覆盖理解生意、价值创造、逆向证据、股东现金、成长调查和筛选研究。
-不知道从哪里开始，可以按企业研究、交易复盘、组合审查、市场叙事、中国企业与逆向研究、成长交叉检查六种任务选工作流。
+社区人物包括退学炒股、北京炒家、炒股养家、职业炒手、涅盘重升、92科比、银行螺丝钉和ETF拯救世界。
+它们与巴菲特、段永平、机构投资者分别列目录，按问题选择，避免把不同圈层混成一份“大师语录”。
 
-我最想做的一个功能是“同题多流派”：给同一份公司资料，长期投资框架与短期交易框架
-会关注什么、缺什么证据、为什么得出不同判断？结果会保留分歧，让人能继续核查。
+直接按流派选也行：缠论看结构与确认，打板看排队与退出，龙头战法看事前梯队，
+低吸看参照和下跌预算，趋势突破看信号时点，网格看整个账户而非只看小格子利润。
 
-支持标准 SKILL.md 格式，可按名称安装到 Codex、Claude Code 等客户端。
-README 里放了两个虚构案例演示；它们展示研究过程，不是收益证明。
+还可以用峰哥梗、户晨风品牌梗、孙宇晨热搜梗整点活。例如：
+“上午的我负责清仓，下午的我负责给上午的我提供流动性。”——这是项目原创段子，不是人物语录。
+
+研究和娱乐都有各自入口。来源受限的材料明确注明，段子不当买卖依据。
+每个研究技能附出处、可核查流程和反证条件，格式与安装检查不冒充收益证明。
+
+支持按名称安装到Codex、Claude Code等客户端。欢迎带原文、反例和真实失败记录来共建。
 
 项目地址：https://github.com/superShen0916/investing-skills
-
-欢迎补原始材料、提反例，或者提交你使用 skill 时遇到的失败案例。
 
 ## 演示顺序
 

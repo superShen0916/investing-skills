@@ -1,4 +1,4 @@
-# 新增人物的来源覆盖
+# 新增框架的来源覆盖
 
 版本0.3.0，核查日期2026-10-26。下表说明本轮14套新增框架实际使用了什么，
 不代表已读完这些人物的所有著作，也不代表获得授权、背书或验证了投资业绩。
@@ -23,3 +23,26 @@
 
 表格、情景、调查问题与停止条件由维护者独立设计。覆盖较窄的技能应保持范围较窄，
 后续补充可靠原文后再扩展，不能靠知名度填充未经核查的细节。
+
+## 0.4.0：社区、流派与原创娱乐
+
+核查日期2026-10-26。新增13个技能，来源与用途分别记录。
+
+| 入口 | 材料及核查范围 | 类型 |
+| --- | --- | --- |
+| [涅盘重升](../skills/niepan-decision-review/references/sources.md) | 本人2016年实盘帖及选定本人回复可读，未审计账户 | 人物研究 |
+| [92科比](../skills/kobe92-theme-rotation/references/sources.md) | 社区转帖可读，原始归属未独立核对；不认证资产规模与胜率 | 来源受限人物研究 |
+| [银行螺丝钉](../skills/luosiding-index-valuation/references/sources.md) | 本人雪球主页及2026-10-23文章可读；未复现星级算法 | 人物研究 |
+| [ETF拯救世界](../skills/etf-world-position-plan/references/sources.md) | 授权整理平台的本人署名文章可读，授权不代表本项目被授权 | 人物研究 |
+| [缠论](../skills/chanlun-structure-review/references/sources.md) | 第15课原博客、第20课第三方存档可读；未逐课读取108课 | 流派学习与核查 |
+| [打板](../skills/limit-up-execution-review/references/sources.md) | 交易所规则发布页、撮合概念和投教材料；未验证策略收益 | 维护者研究流程 |
+| [龙头接力](../skills/leader-relay-review/references/sources.md) | 社区语境与失败复盘；领涨维度由维护者显式定义 | 维护者研究流程 |
+| [低吸](../skills/pullback-rebound-review/references/sources.md) | 社区手法语境；参照与下跌预算为原创 | 维护者研究流程 |
+| [趋势突破](../skills/trend-breakout-review/references/sources.md) | 高层方法背景与规则入口；无现成最佳参数 | 维护者研究流程 |
+| [网格](../skills/grid-path-review/references/sources.md) | 2019年原作在2021年授权整理平台发布；相关正文可读 | 维护者改编研究 |
+| [孙宇晨](../skills/justin-sun-headline-roast/references/sources.md) | 官方慈善午餐公告、公开艺术品事件线索；仅作语境 | 原创娱乐 |
+| [峰哥](../skills/fengge-fomo-roast/references/sources.md) | 媒体对公开炒股表达的报道，不是完整账户 | 原创娱乐 |
+| [户晨风](../skills/huchenfeng-brand-roast/references/sources.md) | 公开报道中的品牌标签语境，未取得完整投资理论 | 原创娱乐 |
+
+暂未创建技能的asking、瑞鹤仙、龙飞虎、唐朝等补源入口见[社区地图](COMMUNITY_MAP.md)。
+人物数量只统计研究框架，不把缠论作者或娱乐人物再次叠加为投资大师数量。

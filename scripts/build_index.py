@@ -15,6 +15,7 @@ except ImportError:
     sys.exit("Install validation dependencies: python -m pip install -r requirements-dev.txt")
 
 ROOT = Path(__file__).resolve().parents[1]
+KINDS = {"router", "investor-framework", "trading-school", "satire"}
 
 
 def make_index(root: Path = ROOT) -> dict:
@@ -22,6 +23,9 @@ def make_index(root: Path = ROOT) -> dict:
     entries = []
     for item in catalog["skills"]:
         slug = item["id"]
+        kind = item.get("kind", "investor-framework")
+        if kind not in KINDS:
+            raise ValueError(f"Invalid skill kind: {slug}")
         if not isinstance(slug, str) or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
             raise ValueError("Invalid skill id")
         path = f"skills/{slug}/SKILL.md"
@@ -43,8 +47,11 @@ def make_index(root: Path = ROOT) -> dict:
             "path": path,
             "sources": f"skills/{slug}/references/sources.md",
             "status": item["status"],
+            "kind": kind,
+            "track": item.get("track", item["category"]),
         })
     ids = {item["name"] for item in entries}
+    kinds = {item["name"]: item["kind"] for item in entries}
     packs = catalog.get("packs", [])
     if len({pack["id"] for pack in packs}) != len(packs):
         raise ValueError("Duplicate pack ids")
@@ -52,6 +59,11 @@ def make_index(root: Path = ROOT) -> dict:
         members = pack["skills"]
         if not members or len(members) != len(set(members)) or set(members) - ids:
             raise ValueError(f"Invalid members in pack: {pack['id']}")
+        purpose = pack.get("purpose", "research")
+        if purpose not in {"research", "entertainment"}:
+            raise ValueError(f"Invalid pack purpose: {pack['id']}")
+        if purpose == "research" and any(kinds[slug] == "satire" for slug in members):
+            raise ValueError(f"Research pack cannot include satire: {pack['id']}")
     return {
         "schema_version": 1,
         "repository": "https://github.com/superShen0916/investing-skills",

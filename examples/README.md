@@ -7,4 +7,5 @@
 | --- | --- |
 | 同一家公司，长期生意与短期价格如何分别研究 | [多框架研究](multi-framework-review.md) |
 | 连续赚钱后加仓、偏离计划，如何复盘 | [交易日志复盘](trading-journal-review.md) |
+| 用孙宇晨、峰哥、户晨风的公共语境写原创股市段子 | [梗股学演示](meme-clinic.md) |
 

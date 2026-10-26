@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "https://github.com/superShen0916/investing-skills",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "language": "zh-CN",
   "validation_scope": "Structure and local references only; no investment performance validation.",
   "skills": [
@@ -13,7 +13,9 @@
       "description": "按投资期限与研究问题选择合适的投资框架，比较证据、分歧和失效条件。用于多流派投资研究、持仓观点审查或不知道该用哪个 skill 的请求；不以人物投票生成买卖指令。",
       "path": "skills/investment-committee/SKILL.md",
       "sources": "skills/investment-committee/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "router",
+      "track": "routing"
     },
     {
       "name": "buffett-business-quality",
@@ -23,7 +25,9 @@
       "description": "用巴菲特公开股东信启发的流程研究企业质量、现金创造与估值假设；适用于公司基本面研究和投资论点复核，不用于预测短线涨跌。",
       "path": "skills/buffett-business-quality/SKILL.md",
       "sources": "skills/buffett-business-quality/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
     },
     {
       "name": "bogle-cost-discipline",
@@ -33,7 +37,9 @@
       "description": "用约翰·博格公开演讲启发的流程比较宽基基金、投资成本与持有纪律；适用于长期基金方案审查，不用于行业轮动或短线择时。",
       "path": "skills/bogle-cost-discipline/SKILL.md",
       "sources": "skills/bogle-cost-discipline/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
     },
     {
       "name": "marks-cycle-risk",
@@ -43,7 +49,9 @@
       "description": "用霍华德·马克斯公开备忘录启发的流程分析市场心理、信用条件与永久损失风险；适用于周期风险研究，不用于预测精确顶部底部。",
       "path": "skills/marks-cycle-risk/SKILL.md",
       "sources": "skills/marks-cycle-risk/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
     },
     {
       "name": "dalio-risk-budgeting",
@@ -53,7 +61,9 @@
       "description": "用达利欧与桥水公开 All Weather 资料启发的流程研究组合风险集中、增长与通胀情景；适用于多资产组合诊断，不用于复制基金或自动调仓。",
       "path": "skills/dalio-risk-budgeting/SKILL.md",
       "sources": "skills/dalio-risk-budgeting/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
     },
     {
       "name": "tuixue-trading-journal",
@@ -63,7 +73,9 @@
       "description": "根据退学炒股公开自述，检查交易日志中的踏空冲动、连续盈利后的自信扩张及回本交易，分开评价决策、执行与结果。用于交易前自检和事后复盘，不提供其本人战法的收益背书。",
       "path": "skills/tuixue-trading-journal/SKILL.md",
       "sources": "skills/tuixue-trading-journal/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
     },
     {
       "name": "beijing-first-board-review",
@@ -73,7 +85,9 @@
       "description": "依据北京炒家公开专访与仓位讨论，复盘首板候选筛选、下单准备、隔日退出和组合风险，检查成交假设与样本偏差。用于首板策略研究，不把历史经验直接转为当前买入信号。",
       "path": "skills/beijing-first-board-review/SKILL.md",
       "sources": "skills/beijing-first-board-review/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
     },
     {
       "name": "yangjia-market-regime",
@@ -83,7 +97,9 @@
       "description": "依据炒股养家公开文章，构建带竞争解释和失效条件的市场阶段研究，区分弱势反弹初中末期假设。用于情绪与市场状态分析，不把阶段标签或心法语录直接作为买卖指令。",
       "path": "skills/yangjia-market-regime/SKILL.md",
       "sources": "skills/yangjia-market-regime/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
     },
     {
       "name": "munger-inversion",
@@ -93,7 +109,9 @@
       "description": "用芒格公开演讲启发的反向思考与激励审查，寻找投资论点的失败路径、盲点和可核查反证。用于已有观点的反方研究，不替代估值或生成买卖信号。",
       "path": "skills/munger-inversion/SKILL.md",
       "sources": "skills/munger-inversion/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
     },
     {
       "name": "graham-margin-of-safety",
@@ -103,7 +121,9 @@
       "description": "用格雷厄姆公开访谈与安全边际思想研究估值余地、资产质量和价值陷阱。用于低估值或资产折价论点复核，不把低市盈率、低市净率自动当成买点。",
       "path": "skills/graham-margin-of-safety/SKILL.md",
       "sources": "skills/graham-margin-of-safety/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
     },
     {
       "name": "lynch-business-evidence",
@@ -113,7 +133,9 @@
       "description": "用彼得·林奇公开访谈启发的流程，把产品或行业观察转成可核查的企业增长论点。用于消费观察、成长故事和公司研究，避免把熟悉产品误当成值得买股票。",
       "path": "skills/lynch-business-evidence/SKILL.md",
       "sources": "skills/lynch-business-evidence/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
     },
     {
       "name": "soros-reflexivity",
@@ -123,7 +145,9 @@
       "description": "用索罗斯公开反身性讲座启发的流程，研究市场叙事、参与者行为与基本面的反馈。用于热点、融资与繁荣衰退机制分析，不用来预测泡沫破裂时间或自动做空。",
       "path": "skills/soros-reflexivity/SKILL.md",
       "sources": "skills/soros-reflexivity/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
     },
     {
       "name": "duan-business-understanding",
@@ -133,7 +157,9 @@
       "description": "用段永平公开交流启发的流程检查是否真正理解一家公司的生意与企业文化。用于能力圈自查、长期持有理由审查，以及区分懂产品、懂公司和跟随名人持仓。",
       "path": "skills/duan-business-understanding/SKILL.md",
       "sources": "skills/duan-business-understanding/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "business-investing"
     },
     {
       "name": "lilu-knowledge-boundary",
@@ -143,7 +169,9 @@
       "description": "用李录公开演讲启发的流程审查投资知识边界和独立判断。用于研究论点的知识审计、事实与猜测分离，以及市场反对自己时的证据复查。",
       "path": "skills/lilu-knowledge-boundary/SKILL.md",
       "sources": "skills/lilu-knowledge-boundary/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "business-investing"
     },
     {
       "name": "zhanglei-value-creation",
@@ -153,7 +181,9 @@
       "description": "用张磊公开书摘启发的流程检验长期主义是否落实为价值创造。用于研发、组织转型、长期投入与短期利润取舍的企业研究，区分长期投资和无期限等待。",
       "path": "skills/zhanglei-value-creation/SKILL.md",
       "sources": "skills/zhanglei-value-creation/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "business-investing"
     },
     {
       "name": "qiu-competition-valuation",
@@ -163,7 +193,9 @@
       "description": "用邱国鹭公开专访启发的流程交叉检查行业竞争格局、公司品质与估值。用于低估值龙头、行业集中度提升和价值陷阱研究，避免以便宜替代经营质量。",
       "path": "skills/qiu-competition-valuation/SKILL.md",
       "sources": "skills/qiu-competition-valuation/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "business-investing"
     },
     {
       "name": "fengliu-visible-risk",
@@ -173,7 +205,9 @@
       "description": "用冯柳公开弱者体系访谈启发的流程研究已暴露风险、市场共识与等待的代价。用于大跌后逆向论点审查，区分风险可见、风险已定价与风险已解除。",
       "path": "skills/fengliu-visible-risk/SKILL.md",
       "sources": "skills/fengliu-visible-risk/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "business-investing"
     },
     {
       "name": "linyuan-demand-substitution",
@@ -183,7 +217,9 @@
       "description": "用林园公开专访启发的流程检查持续需求、产品替代性与财务承受力。用于消费和医药等需求故事研究，避免把行业需求增长或品牌知名度当成公司利润保证。",
       "path": "skills/linyuan-demand-substitution/SKILL.md",
       "sources": "skills/linyuan-demand-substitution/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "business-investing"
     },
     {
       "name": "danbin-secular-thesis",
@@ -193,7 +229,9 @@
       "description": "用但斌公开专访启发的流程审查大产业趋势与龙头公司的长期论点。用于技术浪潮、长期持有和集中暴露研究，区分趋势正确、公司受益与买入价格合理。",
       "path": "skills/danbin-secular-thesis/SKILL.md",
       "sources": "skills/danbin-secular-thesis/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "business-investing"
     },
     {
       "name": "zhangkun-shareholder-cash",
@@ -203,7 +241,9 @@
       "description": "用张坤管理基金的公开报告启发的流程核查自由现金流、分红回购与股东所得。用于高质量高股息论点、回购价值及经营现金与估值背离的研究。",
       "path": "skills/zhangkun-shareholder-cash/SKILL.md",
       "sources": "skills/zhangkun-shareholder-cash/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "business-investing"
     },
     {
       "name": "zhushaoxing-growth-governance",
@@ -213,7 +253,9 @@
       "description": "用朱少醒管理基金的公开报告启发的流程检查成长质量、公司治理与合理定价。用于自下而上选股研究，把企业基因等抽象表述转成可观察的管理和经营证据。",
       "path": "skills/zhushaoxing-growth-governance/SKILL.md",
       "sources": "skills/zhushaoxing-growth-governance/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "business-investing"
     },
     {
       "name": "zhiye-chaoshou-exposure-tempo",
@@ -223,7 +265,9 @@
       "description": "用职业炒手本人老帖启发的流程复盘仓位、交易节奏与回撤。用于已有成交记录的执行审查，比较事前风险判断和实际资金暴露，不生成网传游资战法或收益神话。",
       "path": "skills/zhiye-chaoshou-exposure-tempo/SKILL.md",
       "sources": "skills/zhiye-chaoshou-exposure-tempo/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
     },
     {
       "name": "fisher-scuttlebutt",
@@ -233,7 +277,9 @@
       "description": "用菲利普·费雪的多方调查思想及有明确归属的公开转述启发的流程，设计企业研究的交叉核实。用于渠道调查计划、客户与竞争者证据整理及增长论点反证。",
       "path": "skills/fisher-scuttlebutt/SKILL.md",
       "sources": "skills/fisher-scuttlebutt/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
     },
     {
       "name": "templeton-global-comparison",
@@ -243,7 +289,9 @@
       "description": "用约翰·邓普顿署名文章启发的流程比较不同市场的价值与逆向论点。用于跨市场低估研究、悲观情绪审查及税费汇率后的实际回报比较。",
       "path": "skills/templeton-global-comparison/SKILL.md",
       "sources": "skills/templeton-global-comparison/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
     },
     {
       "name": "greenblatt-quality-value-screen",
@@ -253,7 +301,9 @@
       "description": "用乔尔·格林布拉特公开公式投资资料启发的流程检查质量与便宜的联合筛选。用于选股因子研究、候选排序和回测设计，审查财务口径、时点可得性与交易成本。",
       "path": "skills/greenblatt-quality-value-screen/SKILL.md",
       "sources": "skills/greenblatt-quality-value-screen/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
     },
     {
       "name": "oneil-growth-confirmation",
@@ -263,7 +313,165 @@
       "description": "用威廉·欧奈尔公开方法介绍启发的流程交叉检查增长数据与价格成交行为。用于成长候选和突破叙事研究，要求事前样本、财务质量与真实成交约束，不仅凭图形选股。",
       "path": "skills/oneil-growth-confirmation/SKILL.md",
       "sources": "skills/oneil-growth-confirmation/references/sources.md",
-      "status": "research-workflow"
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "international"
+    },
+    {
+      "name": "niepan-decision-review",
+      "title": "涅盘重升：决策纠错",
+      "category": "short-term",
+      "inspired_by": "涅盘重升",
+      "description": "用淘股吧涅盘重升本人实盘帖中的自我纠错记录启发复盘，检查指数环境、热点预期与卖出执行。用于短线失败交易的决策链分析，不以实盘帖标题证明收益能力。",
+      "path": "skills/niepan-decision-review/SKILL.md",
+      "sources": "skills/niepan-decision-review/references/sources.md",
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "name": "kobe92-theme-rotation",
+      "title": "92科比：题材切换（来源受限）",
+      "category": "short-term",
+      "inspired_by": "92科比 / 社区转述，原帖待核对",
+      "description": "依据社区转述的92科比情绪周期与题材切换材料，比较主升、震荡、退潮等竞争假设。用于热点接力与高低切研究；原帖尚未独立定位，不能作为已核实的本人完整策略。",
+      "path": "skills/kobe92-theme-rotation/SKILL.md",
+      "sources": "skills/kobe92-theme-rotation/references/sources.md",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "name": "luosiding-index-valuation",
+      "title": "银行螺丝钉：指数估值",
+      "category": "portfolio",
+      "inspired_by": "银行螺丝钉",
+      "description": "用雪球银行螺丝钉公开估值文章启发的流程审查指数估值表与分批投入计划。用于指数低估论点、历史分位比较和资金节奏研究，不复制星级算法或直接跟投历史组合。",
+      "path": "skills/luosiding-index-valuation/SKILL.md",
+      "sources": "skills/luosiding-index-valuation/references/sources.md",
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "community-investing"
+    },
+    {
+      "name": "etf-world-position-plan",
+      "title": "ETF拯救世界：仓位计划",
+      "category": "portfolio",
+      "inspired_by": "ETF拯救世界",
+      "description": "用ETF拯救世界经授权公开整理的文章启发，审查分批投入、仓位上下限和再平衡计划。用于长赢计划学习、跟投适配与现金预算研究，不复制历史发车交易或保证指数回本。",
+      "path": "skills/etf-world-position-plan/SKILL.md",
+      "sources": "skills/etf-world-position-plan/references/sources.md",
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "community-investing"
+    },
+    {
+      "name": "chanlun-structure-review",
+      "title": "缠论：结构与确认",
+      "category": "technical",
+      "inspired_by": "缠中说禅公开课程及注明来源的存档",
+      "description": "依据缠中说禅公开课程及注明来源的存档，学习和核查分型、笔、线段、中枢、背驰与第三类买卖点。用于缠论标注复核和截至时点的结构分析，记录规则版本与确认延迟。",
+      "path": "skills/chanlun-structure-review/SKILL.md",
+      "sources": "skills/chanlun-structure-review/references/sources.md",
+      "status": "research-workflow",
+      "kind": "trading-school",
+      "track": "trading-schools"
+    },
+    {
+      "name": "limit-up-execution-review",
+      "title": "打板：事件与成交",
+      "category": "short-term",
+      "inspired_by": "社区交易类型 / 维护者原创研究流程",
+      "description": "研究A股打板、首板、连板与回封交易的候选、封板事件、排队成交和隔日退出。用于打板策略说明、逐笔复盘或回测方案审查，区分封住、买得到和交易赚钱。",
+      "path": "skills/limit-up-execution-review/SKILL.md",
+      "sources": "skills/limit-up-execution-review/references/sources.md",
+      "status": "research-workflow",
+      "kind": "trading-school",
+      "track": "trading-schools"
+    },
+    {
+      "name": "leader-relay-review",
+      "title": "龙头战法：梯队与接力",
+      "category": "short-term",
+      "inspired_by": "社区交易类型 / 维护者原创研究流程",
+      "description": "把龙头战法、连板接力、卡位与补涨等社区术语转成事前可核查的候选比较。用于题材内领涨者识别、分歧一致研究和接力失败复盘，防止事后只挑最终龙头。",
+      "path": "skills/leader-relay-review/SKILL.md",
+      "sources": "skills/leader-relay-review/references/sources.md",
+      "status": "research-workflow",
+      "kind": "trading-school",
+      "track": "trading-schools"
+    },
+    {
+      "name": "pullback-rebound-review",
+      "title": "低吸：回踩与反弹",
+      "category": "short-term",
+      "inspired_by": "社区交易类型 / 维护者原创研究流程",
+      "description": "比较趋势回踩、区间低吸与超跌反弹的交易假设。用于低吸研究或复盘，明确相对哪个参照算低、确认条件与继续下跌时的资金和退出约束。",
+      "path": "skills/pullback-rebound-review/SKILL.md",
+      "sources": "skills/pullback-rebound-review/references/sources.md",
+      "status": "research-workflow",
+      "kind": "trading-school",
+      "track": "trading-schools"
+    },
+    {
+      "name": "trend-breakout-review",
+      "title": "趋势突破：信号与执行",
+      "category": "technical",
+      "inspired_by": "通用价格策略 / 维护者原创研究流程",
+      "description": "审查趋势突破、放量突破和回踩确认的事前定义与真实执行。用于价格策略学习、信号复盘及回测方案，处理收盘确认、跳空、复权和假突破。",
+      "path": "skills/trend-breakout-review/SKILL.md",
+      "sources": "skills/trend-breakout-review/references/sources.md",
+      "status": "research-workflow",
+      "kind": "trading-school",
+      "track": "trading-schools"
+    },
+    {
+      "name": "grid-path-review",
+      "title": "网格：路径与总资产",
+      "category": "systematic",
+      "inspired_by": "公开网格资料 / 维护者原创研究流程",
+      "description": "研究网格交易的间距、库存、现金占用与路径风险。用于等差等比网格学习、策略方案比较和历史交易审查，区分已实现网格利润与持仓浮亏后的总资产结果。",
+      "path": "skills/grid-path-review/SKILL.md",
+      "sources": "skills/grid-path-review/references/sources.md",
+      "status": "research-workflow",
+      "kind": "trading-school",
+      "track": "trading-schools"
+    },
+    {
+      "name": "fengge-fomo-roast",
+      "title": "峰哥梗：退市又上车",
+      "category": "entertainment",
+      "inspired_by": "维护者原创段子 / 峰哥公共语境",
+      "description": "仅在用户明确要峰哥梗、搞笑复盘或轻度吐槽时，用原创段子表现清仓、踏空、追回的情绪循环，再指出一项可核查的问题。娱乐技能，不冒充峰哥本人、不提供反向荐股。",
+      "path": "skills/fengge-fomo-roast/SKILL.md",
+      "sources": "skills/fengge-fomo-roast/references/sources.md",
+      "status": "entertainment-only",
+      "kind": "satire",
+      "track": "meme-clinic"
+    },
+    {
+      "name": "huchenfeng-brand-roast",
+      "title": "户晨风梗：品牌与估值",
+      "category": "entertainment",
+      "inspired_by": "维护者原创段子 / 户晨风品牌标签公共语境",
+      "description": "仅在用户明确要户晨风、苹果安卓梗或搞笑投资文案时，写原创品牌标签段子，调侃用消费身份替代企业估值的逻辑。娱乐模式，不把任何消费群体排成高低，不冒充本人投资理论。",
+      "path": "skills/huchenfeng-brand-roast/SKILL.md",
+      "sources": "skills/huchenfeng-brand-roast/references/sources.md",
+      "status": "entertainment-only",
+      "kind": "satire",
+      "track": "meme-clinic"
+    },
+    {
+      "name": "justin-sun-headline-roast",
+      "title": "孙哥（孙宇晨）：热搜与叙事",
+      "category": "entertainment",
+      "inspired_by": "维护者原创段子 / 孙宇晨公开事件背景",
+      "description": "仅在用户明确要孙哥、孙宇晨梗或搞笑投资文案时，用原创段子调侃热搜、名人事件和投资依据的混淆。娱乐模式，不扮演孙宇晨，不把传播热度当资产价值或收益保证。",
+      "path": "skills/justin-sun-headline-roast/SKILL.md",
+      "sources": "skills/justin-sun-headline-roast/references/sources.md",
+      "status": "entertainment-only",
+      "kind": "satire",
+      "track": "meme-clinic"
     }
   ],
   "packs": [
@@ -276,7 +484,8 @@
         "lynch-business-evidence",
         "graham-margin-of-safety",
         "munger-inversion"
-      ]
+      ],
+      "purpose": "research"
     },
     {
       "id": "trade-review",
@@ -287,7 +496,8 @@
         "yangjia-market-regime",
         "tuixue-trading-journal",
         "zhiye-chaoshou-exposure-tempo"
-      ]
+      ],
+      "purpose": "research"
     },
     {
       "id": "portfolio-review",
@@ -297,7 +507,8 @@
         "bogle-cost-discipline",
         "dalio-risk-budgeting",
         "marks-cycle-risk"
-      ]
+      ],
+      "purpose": "research"
     },
     {
       "id": "market-feedback",
@@ -307,7 +518,8 @@
         "soros-reflexivity",
         "marks-cycle-risk",
         "yangjia-market-regime"
-      ]
+      ],
+      "purpose": "research"
     },
     {
       "id": "china-business-review",
@@ -318,7 +530,8 @@
         "qiu-competition-valuation",
         "fengliu-visible-risk",
         "zhangkun-shareholder-cash"
-      ]
+      ],
+      "purpose": "research"
     },
     {
       "id": "growth-crosscheck",
@@ -329,6 +542,45 @@
         "fisher-scuttlebutt",
         "zhanglei-value-creation",
         "oneil-growth-confirmation"
+      ],
+      "purpose": "research"
+    },
+    {
+      "id": "community-traders",
+      "title": "社区交易者",
+      "purpose": "research",
+      "skills": [
+        "investment-committee",
+        "tuixue-trading-journal",
+        "beijing-first-board-review",
+        "yangjia-market-regime",
+        "zhiye-chaoshou-exposure-tempo",
+        "niepan-decision-review",
+        "kobe92-theme-rotation"
+      ]
+    },
+    {
+      "id": "trading-schools",
+      "title": "交易流派",
+      "purpose": "research",
+      "skills": [
+        "investment-committee",
+        "chanlun-structure-review",
+        "limit-up-execution-review",
+        "leader-relay-review",
+        "pullback-rebound-review",
+        "trend-breakout-review",
+        "grid-path-review"
+      ]
+    },
+    {
+      "id": "meme-clinic",
+      "title": "梗股学（原创娱乐）",
+      "purpose": "entertainment",
+      "skills": [
+        "fengge-fomo-roast",
+        "huchenfeng-brand-roast",
+        "justin-sun-headline-roast"
       ]
     }
   ]
