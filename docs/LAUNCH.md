@@ -4,7 +4,7 @@
 
 ## GitHub About
 
-Source-backed investing skills for AI agents: 39 investing skills: community traders, investment frameworks, Chan theory, limit-up research and opt-in original market humor. 原始出处、反证清单与交易复盘。
+Source-backed investing skills for AI agents: 47 investing skills: community traders, investment frameworks, Chan theory, limit-up research and opt-in original market humor. 原始出处、反证清单与交易复盘。
 
 ## 建议 Topics
 
@@ -14,9 +14,10 @@ Source-backed investing skills for AI agents: 39 investing skills: community tra
 
 从巴菲特到炒股养家，再到缠论、打板和“我已经退出股市了”。
 
-我做了一个39个技能的投资研究开源库：29套人物研究、6类交易流派、3个原创娱乐模式和1个研究路由。
+我做了一个47个技能的投资研究开源库：37套人物研究、6类交易流派、3个原创娱乐模式和1个研究路由。
 
-社区人物包括退学炒股、北京炒家、炒股养家、职业炒手、涅盘重升、92科比、银行螺丝钉和ETF拯救世界。
+社区人物包括退学炒股、北京炒家、炒股养家、职业炒手、涅盘重升、92科比、赵老哥、asking、瑞鹤仙、龙飞虎、陈小群。
+雪球这一侧有银行螺丝钉、ETF拯救世界、唐朝、望京博格、持有封基，各自有不同研究入口。
 它们与巴菲特、段永平、机构投资者分别列目录，按问题选择，避免把不同圈层混成一份“大师语录”。
 
 直接按流派选也行：缠论看结构与确认，打板看排队与退出，龙头战法看事前梯队，

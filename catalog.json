@@ -1,6 +1,6 @@
 {
   "name": "investing-skills",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "language": "zh-CN",
   "format": "Agent Skills",
   "validation_scope": "Structure and local references only; no investment performance validation.",
@@ -355,6 +355,78 @@
       "status": "entertainment-only",
       "kind": "satire",
       "track": "meme-clinic"
+    },
+    {
+      "id": "zhao-reseal-selection",
+      "title": "赵老哥：回封与模式筛选",
+      "category": "short-term",
+      "inspired_by": "赵老哥",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "id": "asking-opportunity-filter",
+      "title": "asking：机会取舍",
+      "category": "short-term",
+      "inspired_by": "asking",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "id": "ruihexian-execution-regret",
+      "title": "瑞鹤仙：执行与遗憾",
+      "category": "behavior",
+      "inspired_by": "瑞鹤仙",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "id": "longfeihu-rolling-exposure",
+      "title": "龙飞虎：分仓滚动",
+      "category": "portfolio",
+      "inspired_by": "龙飞虎",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "id": "chenxiaoqun-theme-consensus",
+      "title": "陈小群：题材共振",
+      "category": "short-term",
+      "inspired_by": "陈小群",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "id": "tangchao-profit-cash-check",
+      "title": "唐朝／唐书房：利润与现金",
+      "category": "fundamental",
+      "inspired_by": "唐朝／唐书房",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-investing"
+    },
+    {
+      "id": "wangjing-investor-return",
+      "title": "望京博格：基金与实际收益",
+      "category": "portfolio",
+      "inspired_by": "望京博格",
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "community-investing"
+    },
+    {
+      "id": "chiyou-quant-validation",
+      "title": "持有封基：量化验证",
+      "category": "quantitative",
+      "inspired_by": "持有封基",
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "community-investing"
     }
   ],
   "packs": [
@@ -439,7 +511,12 @@
         "yangjia-market-regime",
         "zhiye-chaoshou-exposure-tempo",
         "niepan-decision-review",
-        "kobe92-theme-rotation"
+        "kobe92-theme-rotation",
+        "zhao-reseal-selection",
+        "asking-opportunity-filter",
+        "ruihexian-execution-regret",
+        "longfeihu-rolling-exposure",
+        "chenxiaoqun-theme-consensus"
       ]
     },
     {
@@ -464,6 +541,19 @@
         "fengge-fomo-roast",
         "huchenfeng-brand-roast",
         "justin-sun-headline-roast"
+      ]
+    },
+    {
+      "id": "xueqiu-research",
+      "title": "雪球社区研究",
+      "purpose": "research",
+      "skills": [
+        "investment-committee",
+        "luosiding-index-valuation",
+        "etf-world-position-plan",
+        "tangchao-profit-cash-check",
+        "wangjing-investor-return",
+        "chiyou-quant-validation"
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "https://github.com/superShen0916/investing-skills",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "language": "zh-CN",
   "validation_scope": "Structure and local references only; no investment performance validation.",
   "skills": [
@@ -472,6 +472,102 @@
       "status": "entertainment-only",
       "kind": "satire",
       "track": "meme-clinic"
+    },
+    {
+      "name": "zhao-reseal-selection",
+      "title": "赵老哥：回封与模式筛选",
+      "category": "short-term",
+      "inspired_by": "赵老哥",
+      "description": "研究赵老哥相关整理材料中的回封与模式筛选主题。用于比较首次封板、开板、回封的事前信息与成交条件；来源受限，不把二板定龙头等网传语录认定为本人规则。",
+      "path": "skills/zhao-reseal-selection/SKILL.md",
+      "sources": "skills/zhao-reseal-selection/references/sources.md",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "name": "asking-opportunity-filter",
+      "title": "asking：机会取舍",
+      "category": "short-term",
+      "inspired_by": "asking",
+      "description": "依据社区所转asking材料，检查活跃环境、机会筛选与不参与条件。用于超短候选过多、亏损后仍频繁出手或无法持续盯盘的复盘；尚未独立核验完整本人原文。",
+      "path": "skills/asking-opportunity-filter/SKILL.md",
+      "sources": "skills/asking-opportunity-filter/references/sources.md",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "name": "ruihexian-execution-regret",
+      "title": "瑞鹤仙：执行与遗憾",
+      "category": "behavior",
+      "inspired_by": "瑞鹤仙",
+      "description": "依据瑞鹤仙相关公开汇编，复盘卖飞、踏空、后悔和情绪对后续执行的影响。把当时可行方案与事后最优路径分开，检查交易限制；不输出据称复刻的本人买点。",
+      "path": "skills/ruihexian-execution-regret/SKILL.md",
+      "sources": "skills/ruihexian-execution-regret/references/sources.md",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "name": "longfeihu-rolling-exposure",
+      "title": "龙飞虎：分仓滚动",
+      "category": "portfolio",
+      "inspired_by": "龙飞虎",
+      "description": "研究龙飞虎相关整理材料中的分仓滚动与新老仓联动。用于复盘多只短线持仓、可卖库存和盘中暴露变化；来源受限，不把分仓等同于风险分散或自动降低回撤。",
+      "path": "skills/longfeihu-rolling-exposure/SKILL.md",
+      "sources": "skills/longfeihu-rolling-exposure/references/sources.md",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "name": "chenxiaoqun-theme-consensus",
+      "title": "陈小群：题材共振",
+      "category": "short-term",
+      "inspired_by": "陈小群",
+      "description": "依据淘股吧对陈小群的公开介绍，研究事件、板块与领涨候选是否共振。用于拆解热点叙事、跟风关系和休整条件；平台介绍不等于本人完整访谈，不能按席位猜本人交易。",
+      "path": "skills/chenxiaoqun-theme-consensus/SKILL.md",
+      "sources": "skills/chenxiaoqun-theme-consensus/references/sources.md",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-trading"
+    },
+    {
+      "name": "tangchao-profit-cash-check",
+      "title": "唐朝／唐书房：利润与现金",
+      "category": "fundamental",
+      "inspired_by": "唐朝／唐书房",
+      "description": "依据唐朝相关公开问答整理，核查利润真实性、持续性与再投入需求。用于财报阅读和估值前提审查；当前依据第三方问答镜像，来源受限，不照搬三年利润倍数或收益率。",
+      "path": "skills/tangchao-profit-cash-check/SKILL.md",
+      "sources": "skills/tangchao-profit-cash-check/references/sources.md",
+      "status": "source-limited-workflow",
+      "kind": "investor-framework",
+      "track": "community-investing"
+    },
+    {
+      "name": "wangjing-investor-return",
+      "title": "望京博格：基金与实际收益",
+      "category": "portfolio",
+      "inspired_by": "望京博格",
+      "description": "依据望京博格公开演讲，核对基金净值业绩与投资者实际收益的差异、全收益基准和费用。用于基金追涨杀跌、收益比较或定投记录复盘；不复制其组合或行情温度算法。",
+      "path": "skills/wangjing-investor-return/SKILL.md",
+      "sources": "skills/wangjing-investor-return/references/sources.md",
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "community-investing"
+    },
+    {
+      "name": "chiyou-quant-validation",
+      "title": "持有封基：量化验证",
+      "category": "quantitative",
+      "inspired_by": "持有封基",
+      "description": "依据持有封基的雪球访谈，审查量化策略过拟合、样本外表现、成本和数据时点。用于轮动、因子与回测审阅；不把回测最佳参数或过去个人收益当作未来盈利证据。",
+      "path": "skills/chiyou-quant-validation/SKILL.md",
+      "sources": "skills/chiyou-quant-validation/references/sources.md",
+      "status": "research-workflow",
+      "kind": "investor-framework",
+      "track": "community-investing"
     }
   ],
   "packs": [
@@ -556,7 +652,12 @@
         "yangjia-market-regime",
         "zhiye-chaoshou-exposure-tempo",
         "niepan-decision-review",
-        "kobe92-theme-rotation"
+        "kobe92-theme-rotation",
+        "zhao-reseal-selection",
+        "asking-opportunity-filter",
+        "ruihexian-execution-regret",
+        "longfeihu-rolling-exposure",
+        "chenxiaoqun-theme-consensus"
       ]
     },
     {
@@ -581,6 +682,19 @@
         "fengge-fomo-roast",
         "huchenfeng-brand-roast",
         "justin-sun-headline-roast"
+      ]
+    },
+    {
+      "id": "xueqiu-research",
+      "title": "雪球社区研究",
+      "purpose": "research",
+      "skills": [
+        "investment-committee",
+        "luosiding-index-valuation",
+        "etf-world-position-plan",
+        "tangchao-profit-cash-check",
+        "wangjing-investor-return",
+        "chiyou-quant-validation"
       ]
     }
   ]

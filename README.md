@@ -5,7 +5,7 @@
 <h1 align="center">Investing Skills · 投资方法论技能库</h1>
 
 <p align="center"><strong>从巴菲特、炒股养家到缠论打板，认真研究，也能整点活。</strong></p>
-<p align="center">39 个 Skills · 社区人物 · 交易流派 · 原创梗股学 · 可追溯出处</p>
+<p align="center">47 个 Skills · 社区人物 · 交易流派 · 原创梗股学 · 可追溯出处</p>
 <p align="center"><a href="README.en.md">English</a> · <a href="#快速开始">快速开始</a> · <a href="#技能目录">技能目录</a> · <a href="examples/README.md">看示例</a> · <a href="CONTRIBUTING.md">参与共建</a></p>
 
 <p align="center">
@@ -36,7 +36,8 @@ npx skills add superShen0916/investing-skills
 
 | 想怎么玩 | 从这里开始 | 例子 |
 | --- | --- | --- |
-| 跟社区人物学研究与复盘 | [社区人物地图](docs/COMMUNITY_MAP.md) | 退学炒股、北京炒家、养家、涅盘重升、92科比、螺丝钉、E大 |
+| 跟社区人物学研究与复盘 | [社区人物地图](docs/COMMUNITY_MAP.md) | 退学炒股、北京炒家、赵老哥、asking、瑞鹤仙、陈小群、唐朝、E大等 |
+| 跟雪球社区做企业、基金与量化研究 | [雪球研究包](docs/PLAYBOOKS.md#10-雪球社区财报基金与量化) | 唐朝、望京博格、持有封基、银行螺丝钉、E大 |
 | 直接按战法学 | [交易流派包](docs/PLAYBOOKS.md#8-交易流派) | 缠论、打板、龙头接力、低吸、趋势突破、网格 |
 | 先整点活，再看哪里不对 | [梗股学演示](examples/meme-clinic.md) | 峰哥式退市又上车、户晨风品牌梗、孙宇晨热搜梗 |
 
@@ -131,12 +132,12 @@ Claude Code 使用 `/buffett-business-quality` 等技能名称。研究委员会
 
 ## 技能目录
 
-**39 个技能 = 29 套人物研究 + 6 类交易流派 + 3 个原创娱乐模式 + 1 个研究路由。**
+**47 个技能 = 37 套人物研究 + 6 类交易流派 + 3 个原创娱乐模式 + 1 个研究路由。**
 
-人物研究中，92科比一项目前基于社区转述，已单独标为来源受限。娱乐模式不计入投资方法。
+人物研究中，92科比、赵老哥、asking、瑞鹤仙、龙飞虎、陈小群、唐朝7项目前主要依据转述或整理，已单独标为来源受限。娱乐模式不计入投资方法。
 [社区人物地图](docs/COMMUNITY_MAP.md) · [流派与安装包](docs/PLAYBOOKS.md) · [梗股学演示](examples/meme-clinic.md) · [来源覆盖](docs/SOURCE_COVERAGE.md)
 
-### 淘股吧与实盘短线社区
+### 淘股吧与实盘短线社区（11套）
 
 | Skill | 思想来源／类型 | 主要任务 | 典型产物 |
 | --- | --- | --- | --- |
@@ -146,13 +147,21 @@ Claude Code 使用 `/buffett-business-quality` 等技能名称。研究委员会
 | [zhiye-chaoshou-exposure-tempo](skills/zhiye-chaoshou-exposure-tempo/SKILL.md) | 职业炒手 | 风险判断、仓位暴露与交易节奏 | 暴露时间线与纠错实验 |
 | [niepan-decision-review](skills/niepan-decision-review/SKILL.md) | 涅盘重升 | 环境、热点与卖出依据何时失效 | 决策链与修订实验 |
 | [kobe92-theme-rotation](skills/kobe92-theme-rotation/SKILL.md) | 92科比 | 情绪阶段、延续、补涨与切换 | 阶段假设与候选对照 |
+| [zhao-reseal-selection](skills/zhao-reseal-selection/SKILL.md) | 赵老哥（来源受限） | 回封与模式筛选 | 回封事件表与模式偏离审查 |
+| [asking-opportunity-filter](skills/asking-opportunity-filter/SKILL.md) | asking（来源受限） | 机会取舍 | 参与／排除清单与注意力预算 |
+| [ruihexian-execution-regret](skills/ruihexian-execution-regret/SKILL.md) | 瑞鹤仙（来源受限） | 执行与遗憾 | 当时可行方案与遗憾传导表 |
+| [longfeihu-rolling-exposure](skills/longfeihu-rolling-exposure/SKILL.md) | 龙飞虎（来源受限） | 分仓滚动 | 新老仓库存账与盘中暴露路径 |
+| [chenxiaoqun-theme-consensus](skills/chenxiaoqun-theme-consensus/SKILL.md) | 陈小群（来源受限） | 题材共振 | 事件—板块共振与反证表 |
 
-### 雪球与指数投资社区
+### 雪球与基金、企业研究社区（5套）
 
 | Skill | 思想来源／类型 | 主要任务 | 典型产物 |
 | --- | --- | --- | --- |
 | [luosiding-index-valuation](skills/luosiding-index-valuation/SKILL.md) | 银行螺丝钉 | 指数估值口径、历史分位与产品实现 | 估值口径与资金消耗审查 |
 | [etf-world-position-plan](skills/etf-world-position-plan/SKILL.md) | ETF拯救世界 | 分批投入、现金边界与再平衡 | 资金路径与跟投差异表 |
+| [tangchao-profit-cash-check](skills/tangchao-profit-cash-check/SKILL.md) | 唐朝／唐书房（来源受限） | 利润与现金 | 利润现金桥与估值前提清单 |
+| [wangjing-investor-return](skills/wangjing-investor-return/SKILL.md) | 望京博格 | 基金与实际收益 | 基金业绩与个人资金路径对照 |
+| [chiyou-quant-validation](skills/chiyou-quant-validation/SKILL.md) | 持有封基 | 量化验证 | 回测证据等级与调参污染审查 |
 
 ### 交易流派：直接按方法选
 

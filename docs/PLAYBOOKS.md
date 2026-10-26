@@ -1,4 +1,4 @@
-# 从任务开始：八种研究入口与一个娱乐包
+# 从任务开始：九种研究入口与一个娱乐包
 
 每个包是一组可选技能，按当前问题加载必要部分，不要求每次全部运行。
 不熟悉框架时先调用 investment-committee；没有数据时先得到缺口清单。
@@ -127,18 +127,24 @@ $investment-committee 请检查这家热门成长公司的论点：把增长故�
 再决定要补哪些研究步骤；不要求给所有社区人物逐个投票。
 
 **可选流程：**养家看环境 → 北京炒家看首板事件 → 涅盘重升看依据怎样失效 →
-职业炒手看暴露与节奏 → 退学炒股看计划偏离。92科比的题材切换技能目前来源受限，引用时保留这一说明。
+职业炒手看暴露与节奏 → 退学炒股看计划偏离。
+
+新增五个可选入口：赵老哥看回封多了什么信息，asking看为什么排除机会，
+瑞鹤仙看卖飞与正常遗憾，龙飞虎看分仓滚动的盘中暴露，陈小群看事件与板块共振。
+这五项和92科比目前均来源受限，引用时保留这一说明；不需要把11个人全部调用一遍。
 
 ```bash
-npx skills add superShen0916/investing-skills --skill investment-committee yangjia-market-regime beijing-first-board-review niepan-decision-review zhiye-chaoshou-exposure-tempo tuixue-trading-journal kobe92-theme-rotation -a codex
+npx skills add superShen0916/investing-skills --skill investment-committee yangjia-market-regime beijing-first-board-review niepan-decision-review zhiye-chaoshou-exposure-tempo tuixue-trading-journal kobe92-theme-rotation zhao-reseal-selection asking-opportunity-filter ruihexian-execution-regret longfeihu-rolling-exposure chenxiaoqun-theme-consensus -a codex
 ```
 
 ```text
 $investment-committee 请按社区交易者框架复盘这份日志，只选与问题相关的两种方法。
 先恢复当时环境，再看依据何时消失；引用转帖材料时不要冒充本人原文。
+$zhao-reseal-selection 比较附件里首次封板、开板和回封时的已知信息，检查实际买得到吗。
+$longfeihu-rolling-exposure 用这份成交记录列新老仓与可卖量，找出盘中暴露最高的时刻。
 ```
 
-雪球与指数社区可单独安装 `luosiding-index-valuation` 和 `etf-world-position-plan`。
+雪球的企业、基金与量化入口见下方第10节。
 人物身份与补源方向见[社区地图](COMMUNITY_MAP.md)。
 
 ## 8. 交易流派
@@ -181,6 +187,30 @@ $fengge-fomo-roast 用这段虚构交易经历整两句活，再给一个可核�
 
 见[三个原创演示](../examples/meme-clinic.md)。娱乐包有显式用途标记，不能混入研究包，
 研究委员会也不把段子当支持意见或反向信号。
+
+## 10. 雪球社区：财报、基金与量化
+
+**输入：**按当前问题提供财报、基金资金流水、指数资料或策略回测记录，选一种主任务。
+
+| 当前问题 | 可选入口 | 产物 |
+| --- | --- | --- |
+| 企业利润是否真实、可持续、需要再投入 | 唐朝 | 利润现金桥与估值前提；第三方问答整理，来源受限 |
+| 基金涨了很多，我却没赚多少 | 望京博格 | 基金业绩、资金流与实际收益对照 |
+| 量化曲线漂亮，是否调参过度 | 持有封基 | 数据时点、调参污染、未见样本与摩擦审查 |
+| 指数便宜是否可据此投入 | 银行螺丝钉 | 估值口径与资金消耗 |
+| 定投、分份、再平衡如何执行 | ETF拯救世界 | 现金边界与仓位路径 |
+
+```bash
+npx skills add superShen0916/investing-skills --skill investment-committee tangchao-profit-cash-check wangjing-investor-return chiyou-quant-validation luosiding-index-valuation etf-world-position-plan -a codex
+```
+
+```text
+$tangchao-profit-cash-check 查附件财报：利润、经营现金、维持经营的再投入对得上吗？先列疑点。
+$wangjing-investor-return 用我的申赎流水核对实际盈亏，再检查拿来比较的基金收益是否同口径。
+$chiyou-quant-validation 这份策略在所谓样本外又调过两次参数，还能叫样本外吗？先审证据再谈收益。
+```
+
+这个包提供不同研究入口，不将人物的观点或收益相加为盈利概率。
 
 ## 使用与安装范围
 

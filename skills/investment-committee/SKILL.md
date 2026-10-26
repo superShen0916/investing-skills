@@ -60,6 +60,14 @@ description: "按投资期限与研究问题选择合适的投资框架，比较
 | 低吸、反弹与反转有何区别 | pullback-rebound-review | marks-cycle-risk：继续恶化的路径 |
 | 放量突破怎样验证 | trend-breakout-review | oneil-growth-confirmation：增长证据与价格证据分开 |
 | 网格小赚但账户总亏为何发生 | grid-path-review | etf-world-position-plan：现金和仓位约束 |
+| 回封比首次封板多了什么信息 | zhao-reseal-selection | limit-up-execution-review：排队与隔夜退出；前者来源受限 |
+| 候选太多，什么时候不参与 | asking-opportunity-filter | yangjia-market-regime：环境与模式是否匹配；前者来源受限 |
+| 卖飞是执行错误还是正常遗憾 | ruihexian-execution-regret | tuixue-trading-journal：追踪后续行为；前者来源受限 |
+| 分仓滚动是否增加盘中风险 | longfeihu-rolling-exposure | dalio-risk-budgeting：名义分仓与共同风险；前者来源受限 |
+| 事件与板块是否真的共振 | chenxiaoqun-theme-consensus | soros-reflexivity：共振与因果分开；前者来源受限 |
+| 利润能否变成可分配现金 | tangchao-profit-cash-check | zhangkun-shareholder-cash：资本需求与股东所得；前者来源受限 |
+| 基金涨了，为什么自己没赚 | wangjing-investor-return | bogle-cost-discipline：成本与暴露是否可比 |
+| 量化曲线是否只是过拟合 | chiyou-quant-validation | greenblatt-quality-value-screen：历史证券池与数据口径 |
 
 ## 取证与比较
 

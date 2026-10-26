@@ -7,9 +7,9 @@
 [中文](README.md) · [Skill catalog](#skills) · [Examples](examples/README.md) · [Contribute](CONTRIBUTING.md)
 
 Turn public investment ideas into repeatable research workflows for AI agents.
-The library contains **39 skills: 29 investor frameworks, 6 trading schools, 3 original entertainment modes, and 1 research router**, covering business quality,
+The library contains **47 skills: 37 investor frameworks, 6 trading schools, 3 original entertainment modes, and 1 research router**, covering business quality,
 portfolio costs, cycles, diversification, Chinese business research, and A-share trading review.
-The research catalog includes 17 frameworks associated with Chinese markets and Chinese investors, and 12 international frameworks.
+The research catalog includes 25 frameworks associated with Chinese markets and Chinese investors, and 12 international frameworks.
 Community trading, index investing, trading schools and opt-in humor have separate discovery tracks.
 Skill instructions and examples are currently written in Chinese; an agent can respond in your preferred language.
 
@@ -67,12 +67,12 @@ Browsing, data access, and calculation tools come from the host agent. Offline r
 
 ## Skills
 
-**39 skills: 29 investor frameworks, 6 trading schools, 3 original entertainment modes, and 1 router.**
+**47 skills: 37 investor frameworks, 6 trading schools, 3 original entertainment modes, and 1 router.**
 
-The Kobe92 framework is source-limited. Entertainment is explicitly typed and excluded from research packs.
+Seven frameworks are source-limited: Kobe92, Zhao, asking, Ruihexian, Longfeihu, Chen Xiaoqun and Tang Chao. Entertainment is explicitly typed and excluded from research packs.
 See the [community map](docs/COMMUNITY_MAP.md), [playbooks](docs/PLAYBOOKS.md), [humor demos](examples/meme-clinic.md), and [source coverage](docs/SOURCE_COVERAGE.md).
 
-### TGB and short-term trading communities
+### TGB and short-term trading communities (11)
 
 | Skill | Public framework / type | Task |
 | --- | --- | --- |
@@ -82,13 +82,21 @@ See the [community map](docs/COMMUNITY_MAP.md), [playbooks](docs/PLAYBOOKS.md), 
 | [zhiye-chaoshou-exposure-tempo](skills/zhiye-chaoshou-exposure-tempo/SKILL.md) | 职业炒手 (Zhiye Chaoshou) | Exposure, trading tempo and drawdown review |
 | [niepan-decision-review](skills/niepan-decision-review/SKILL.md) | 涅盘重升 (Niepan) | Decision and exit review |
 | [kobe92-theme-rotation](skills/kobe92-theme-rotation/SKILL.md) | 92科比 (Kobe92), secondary sources | Theme rotation; source-limited |
+| [zhao-reseal-selection](skills/zhao-reseal-selection/SKILL.md) | 赵老哥 | Reseals, mode selection and feasible execution; source-limited |
+| [asking-opportunity-filter](skills/asking-opportunity-filter/SKILL.md) | asking | Opportunity filters, attention limits and no-trade decisions; source-limited |
+| [ruihexian-execution-regret](skills/ruihexian-execution-regret/SKILL.md) | 瑞鹤仙 | Execution mistakes versus unavoidable regret; source-limited |
+| [longfeihu-rolling-exposure](skills/longfeihu-rolling-exposure/SKILL.md) | 龙飞虎 | Old/new inventory, rolling exposure and shared risks; source-limited |
+| [chenxiaoqun-theme-consensus](skills/chenxiaoqun-theme-consensus/SKILL.md) | 陈小群 | Events, sector breadth and competing theme explanations; source-limited |
 
-### Xueqiu and index-investing communities
+### Xueqiu: funds and business research (5)
 
 | Skill | Public framework / type | Task |
 | --- | --- | --- |
 | [luosiding-index-valuation](skills/luosiding-index-valuation/SKILL.md) | 银行螺丝钉 (Luosiding) | Index valuation and implementation |
 | [etf-world-position-plan](skills/etf-world-position-plan/SKILL.md) | ETF拯救世界 (E Da) | Capital planning and rebalancing |
+| [tangchao-profit-cash-check](skills/tangchao-profit-cash-check/SKILL.md) | 唐朝／唐书房 | Profit quality, persistence and necessary reinvestment; source-limited |
+| [wangjing-investor-return](skills/wangjing-investor-return/SKILL.md) | 望京博格 | Fund performance versus personal cash-flow returns |
+| [chiyou-quant-validation](skills/chiyou-quant-validation/SKILL.md) | 持有封基 | Overfitting, holdouts, data availability and trading friction |
 
 ### Trading schools
 

@@ -44,5 +44,24 @@
 | [峰哥](../skills/fengge-fomo-roast/references/sources.md) | 媒体对公开炒股表达的报道，不是完整账户 | 原创娱乐 |
 | [户晨风](../skills/huchenfeng-brand-roast/references/sources.md) | 公开报道中的品牌标签语境，未取得完整投资理论 | 原创娱乐 |
 
-暂未创建技能的asking、瑞鹤仙、龙飞虎、唐朝等补源入口见[社区地图](COMMUNITY_MAP.md)。
+当时列入补源名单的asking、瑞鹤仙、龙飞虎、唐朝，在0.5.0以明确来源限制的窄范围流程加入，见下表。
 人物数量只统计研究框架，不把缠论作者或娱乐人物再次叠加为投资大师数量。
+
+## 0.5.0：继续扩充淘股吧与雪球
+
+核查日期2026-10-26。新增8套人物研究，总计47个技能、37套人物研究；
+淘股吧社区11套、雪球社区5套。新增6套以及既有92科比共7套标记为来源受限。
+
+| 人物 | 实际读取与未覆盖范围 | 本库主题 |
+| --- | --- | --- |
+| [赵老哥](../skills/zhao-reseal-selection/references/sources.md) | 淘县名人堂整理及作者回复可读；本人原始语录未全部定位。保留“二板定龙头”归属冲突 | 回封、模式筛选与实际成交 |
+| [asking](../skills/asking-opportunity-filter/references/sources.md) | 2010年社区转帖可读；历史时间戳和完整本人原文尚未逐条独立核验 | 机会取舍、注意力与不参与 |
+| [瑞鹤仙](../skills/ruihexian-execution-regret/references/sources.md) | 第三方转载可读；PDF仅检索片段，整份过大读取失败；淘股吧汇集全文需登录 | 可行方案、正常遗憾与后续执行 |
+| [龙飞虎](../skills/longfeihu-rolling-exposure/references/sources.md) | 名人堂整理可读；本人博客目录只在索引中定位，未取得原帖全文 | 新老仓库存与滚动暴露 |
+| [陈小群](../skills/chenxiaoqun-theme-consensus/references/sources.md) | 淘股吧编辑介绍可读；账号名为“专访”不改变此页是介绍与转述，非完整本人问答 | 事件、板块与题材共振 |
+| [唐朝](../skills/tangchao-profit-cash-check/references/sources.md) | 第三方问答镜像可读；本人原始问答未全部定位，未读取整书或完整2015访谈 | 利润、持续性与必要再投入 |
+| [望京博格](../skills/wangjing-investor-return/references/sources.md) | 2019年演讲媒体刊载正文可读；未与原音视频逐字核对，未复现温度表 | 基金业绩、实际收益与比较基准 |
+| [持有封基](../skills/chiyou-quant-validation/references/sources.md) | 2016年雪球访谈相关页可读；平台简介与本人答复区分，未复现BIAS系统 | 过拟合、数据时点、成本与验证阶段 |
+
+来源记录不包含账户业绩审计。步骤、表格与验证设计是维护者原创，
+不是名人完整策略、私有信息、本人授权或投资有效性证明。
